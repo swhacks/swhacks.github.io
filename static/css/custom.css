@@ -1,0 +1,66 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.btn-md.round {
+    border-radius: 20px;
+}
+.btn-lg.round {
+    border-radius: 24px;
+}
+
+/* fonts */
+@font-face {
+    /*
+    font-family: 'expressway';
+    src: url(../expressway.ttf);
+    */
+}
+
+/* navbar styles */
+.navbar-default {
+    /*
+    color: black;
+    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.6), rgba(0,0,0,.4),rgba(0,0,0,0));
+    border: 0;
+    */
+}
+.navbar-brand,
+.navbar-nav li a {
+    /*
+    line-height: 75px;
+    height: 75px;
+    padding-top: 0;
+    */
+}
+.navbar-default .navbar-nav > li > a {
+    /*
+    font-family: expressway;
+    color: whitesmoke; /*Change active text color here*/
+}
+
+/* generic parallax styles */
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+}
