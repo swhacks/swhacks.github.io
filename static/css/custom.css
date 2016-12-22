@@ -1,15 +1,19 @@
-@import "compass/css3";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
 
 * {
   box-sizing: border-box;
 }
+
 html, body {   
     overflow-x: hidden;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     color: #fff;
-    background: #efefef; 
+    background: linear-gradient(#FF8C00, #FF8C00);
+    background: -webkit-linear-gradient(#FF8C00, #FF8C00);
+    background: -moz-linear-gradient(#FF8C00, #FF8C00);
+    background: -ms-linear-gradient(#FF8C00, #FF8C00);
+    background: -o-linear-gradient(#FF8C00, #FF8C00);
 }
 
 /* centered columns styles */
@@ -17,6 +21,7 @@ html, body {
     text-align: center;
     margin: 0 auto;
 }
+
 .col-centered {
     display:inline-block;
     float:none;
@@ -26,131 +31,11 @@ html, body {
     margin-right:-4px;
 }
 
-/* navbar styles */
-.navbar-default {
-    
-    background: transparent;
-    height: 150px;
-    border: 0;
-}
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 75px;
-    height: 75px;
-    padding-top: 0;
-}
-.navbar-default .navbar-nav > li > a {
-    color: whitesmoke; /*Change active text color here*/
-}
-
-
-.background-header {
-    background: url(../img/SWH_background.jpg) no-repeat center;
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 .resizing-title {
     color: white;
     text-align: center;
     padding-top: 3px;
     font-size: 200%;
-}
-.seperator {
-    background: rgba(255,255,255,.5);
-    height: 3px;
-}
-
-.input-row {
-    padding-top: 5px;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 25px 30px;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-.input-row:before {
-    position: absolute;
-    content: "";
-    display: block;
-    top: 0;
-    left: -5000px;
-    height: 100%;
-    width: 15000px;
-    z-index: -1;
-    background: inherit;
-}
-.input-row span {
-    position: relative;
-    display: inline-block;
-    margin: 0px 0px;
-}
-
-.basic-slide {
-    display: inline-block;
-    padding: 10px 0 10px 15px;
-    font-family: "Open Sans", sans;
-    font-weight: 400;
-    color: #ccc;
-    background: #555;
-    border: 0;
-    border-radius: 3px;
-    outline: 0;
-    text-indent: 80px;
-    transition: all .3s ease-in-out;
-}
-.basic-slide::-webkit-input-placeholder {
-    color: #555;
-    text-indent: 0;
-    font-weight: 300;
-}
-.basic-slide + label {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 20px;
-    background: #FF8C00;
-    transition: all .3s ease-in-out;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-
-.basic-slide:focus,
-.basic-slide:active {
-    color: #ccc;
-    text-indent: 0;
-    background: #555;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    transform: translateX(11%);
-}
-.basic-slide:focus + label,
-.basic-slide:active + label {
-    transform: translateX(-50%);
-}
-
-
-.btn-outline {
-    background-color: transparent;
-    color: inherit;
-    transition: all .1s;
-    background-image: none;
-    text-shadow: none;
-    border-width: 1px;
-    border-radius: 3px;
-}
-.btn-warning.btn-outline {
-    color: #fff;
-}
-.btn-warning.btn-outline:hover {
-    color: #fff;
 }
 
 /* Custom, iPhone Retina */ 
