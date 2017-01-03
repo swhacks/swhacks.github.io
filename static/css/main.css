@@ -275,7 +275,8 @@ a, a:hover, a:active, a:visited {
 
 #sponsors-flex {
 	width: 80%;
-	left: 10%;
+	margin-top: 20px;
+	margin-left: 10%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
