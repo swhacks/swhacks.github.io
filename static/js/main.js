@@ -32,7 +32,7 @@
 
 		//Set the email addresses after a timeout. Kills spambots :)
 		setTimeout(function setEmailAddresses() {
-			$(".email-btn").attr("href", "mailto:contact@swhacks.io");
+			$(".email-btn").attr("href", "mailto" + ":contac" + "t@swhacks.io");
 		}, 1000);
 	});
 })();
