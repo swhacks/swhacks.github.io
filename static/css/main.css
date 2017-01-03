@@ -71,6 +71,7 @@ a, a:hover, a:active, a:visited {
 
     height: 100vmin;
     min-height: 500px;
+    text-align: center;
 }
 
 #top-bar {
@@ -104,6 +105,34 @@ a, a:hover, a:active, a:visited {
 }
 
 /* ===Top Header => Logo + Register=== */
+#entry-dead-center {
+	display: inline-block;
+	margin-top: 10vmin;
+	width: 80vw;
+	text-align: center;
+}
+#entry-middle-swhacks-intro {
+	background-image: url("../img/website_header.png");
+	display: inline-block;
+	width: 80vw;
+	height: 31.0902vw;
+	max-height: 500px;
+	max-width: 1350px;
+	background-size: contain;
+}
+#entry-register-button {
+	display: inline-block;
+	width: 120px;
+	height: 64px;
+	line-height: 64px;
+	background-color: yellow;
+	color: #f2630c;
+}
+#entry-register-button:active,
+#entry-register-button:hover {
+	background-color: #f2630c;
+	color: yellow;
+}
 
 /* ===Navigation bar=== */
 @media (min-width: 541px) {
@@ -131,7 +160,6 @@ a, a:hover, a:active, a:visited {
 		display: none;
 	}
 }
-
 @media (max-width: 540px) {
 	#entry-navigation-menu {
 		display: none;
@@ -246,6 +274,8 @@ a, a:hover, a:active, a:visited {
 }
 
 #sponsors-flex {
+	width: 80%;
+	left: 10%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
