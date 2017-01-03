@@ -220,7 +220,11 @@ a, a:hover, a:active, a:visited {
 
 /* ===Schedule=== */
 #schedule {
-	background-color: #313849;
+	background: linear-gradient(#2f3545, #3b4252);
+	background: -webkit-linear-gradient(#2f3545, #3b4252);
+	background: -moz-linear-gradient(#2f3545, #3b4252);
+	background: -ms-linear-gradient(#2f3545, #3b4252);
+	background: -o-linear-gradient(#2f3545, #3b4252);
 	padding-top: 20px;
 	text-align: center;
 }
@@ -290,6 +294,8 @@ a, a:hover, a:active, a:visited {
 
 /* ===Contact Us=== */
 #contact {
+	background-image: url("../img/Contact_bg.png");
+	background-size: cover;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
