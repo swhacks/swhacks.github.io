@@ -1,6 +1,28 @@
 /* ===Font=== */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
-
+@font-face {
+	font-family: "raleway-regular";
+	src: url("../res/Raleway-Regular.ttf");
+}
+@font-face {
+	font-family: "raleway-medium";
+	src: url("../res/Raleway-Medium.ttf");
+}
+@font-face {
+	font-family: "raleway-light";
+	src: url("../res/Raleway-Light.ttf");
+}
+@font-face {
+	font-family: "raleway-heavy";
+	src: url("../res/Raleway-Heavy.ttf");
+}
+@font-face {
+	font-family: "raleway-semibold";
+	src: url("../res/Raleway-SemiBold.ttf");
+}
+@font-face {
+	font-family: "raleway-heavy";
+	src: url("../res/Raleway-Heavy.ttf");
+}
 
 /* ===Set up=== */
 * {
@@ -8,18 +30,21 @@
 }
 
 body {
-	background-color: #f2630c;
-	font-family: "Open Sans", sans-serif;
+	background-color: #f2430c;
 	color: white;
 }
 
 h1 {
 	text-align: center;
+	font-family: "raleway-heavy", Arial, Tahoma;
+	font-size: 30pt;
 	margin: 0px;
 }
 
 h2 {
 	text-align: center;
+	font-family: "raleway-bold", Arial, Tahoma;
+	font-size: 16pt;
 }
 
 a, a:hover, a:active, a:visited {
@@ -89,8 +114,11 @@ a, a:hover, a:active, a:visited {
 }
 
 #top-swhacks-hashtag {
+	left: 4px;
+	position: absolute;
 	color: white;
-	font-size: 20px;
+	font-size: 18pt;
+	font-family: "raleway-light", Verdana, Tahoma;
 }
 
 #top-swhacks-rightalign {
@@ -127,11 +155,13 @@ a, a:hover, a:active, a:visited {
 	line-height: 64px;
 	background-color: yellow;
 	color: #f2630c;
+	font-size: 14pt;
+	font-family: "raleway-medium", Arial, Tahoma;
 }
 #entry-register-button:active,
 #entry-register-button:hover {
-	background-color: #f2630c;
-	color: yellow;
+	background-color: #313849;
+	color: white;
 }
 
 /* ===Navigation bar=== */
@@ -153,7 +183,8 @@ a, a:hover, a:active, a:visited {
 		line-height: 64px;
 		width: 15%;
 		color: white;
-		font-size: 16px;
+		font-size: 15pt;
+		font-family: "raleway-medium", Arial, Tahoma;
 	}
 
 	#navigation-menu {
@@ -177,12 +208,15 @@ a, a:hover, a:active, a:visited {
 		height: 64px;
 		line-height: 64px;
 		color: white;
-		font-size: 16px;
+		font-size: 15pt;
+		font-family: "raleway-medium", Arial, Tahoma;
 	}
 }
 
 #entry-navigation-menu > *:hover,
-#entry-navigation-menu > *:active {
+#entry-navigation-menu > *:active,
+#navigation-menu > *:hover,
+#navigation-menu > *:active {
 	background-color: rgb(116, 120, 130);
 }
 
@@ -216,6 +250,8 @@ a, a:hover, a:active, a:visited {
 	color: black;
 	margin-top: 8px;
 	margin-bottom: 8px;
+	font-family: "raleway-regular", Arial, Tahoma;
+	font-size: 12pt;
 }
 
 /* ===Schedule=== */
@@ -241,10 +277,13 @@ a, a:hover, a:active, a:visited {
 	text-align: right;
 	border-right: 1px solid #C6C6C6;
 	color: #C6C6C6;
-	font-size: 18px;
+	font-family: "raleway-thin", Arial, Tahoma;
+	font-size: 18pt;
 }
 .schedule-tbl td:nth-child(2) {
 	text-align: left;
+	font-family: "raleway-light", Arial, Tahoma;
+	font-size: 18pt;
 }
 
 
@@ -265,7 +304,14 @@ a, a:hover, a:active, a:visited {
 }
 
 #faq-container > h2 {
-	font-size: 32px;
+	font-family: "raleway-semibold", Arial, Tahoma;
+	font-size: 18pt;
+	text-align: left;
+}
+
+#faq-container > hp {
+	font-family: "raleway-regular", Arial, Tahoma;
+	font-size: 12pt;
 	text-align: left;
 }
 
@@ -294,7 +340,9 @@ a, a:hover, a:active, a:visited {
 
 /* ===Contact Us=== */
 #contact {
+	background-color: #495164;
 	background-image: url("../img/Contact_bg.png");
+	background-position: bottom;
 	background-size: cover;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -306,8 +354,12 @@ a, a:hover, a:active, a:visited {
 
 #contact-buttons {
 	text-align: center;
+	margin-left: 4px;
+	margin-right: 4px;
 }
 
 #copyright {
 	text-align: center;
+	font-family: "raleway-regualr", tahoma, Arial;
+	font-size: 12pt;
 }
