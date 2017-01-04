@@ -271,6 +271,8 @@ a, a:hover, a:active, a:visited {
 
 .schedule-tbl td {
 	padding: 8px;
+	padding-left: 24px;
+	padding-right: 24px;
 }
 
 .schedule-tbl td:nth-child(1) {
