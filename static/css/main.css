@@ -349,13 +349,12 @@ a, a:hover, a:active, a:visited {
 }
 
 #contact > * {
-	margin-bottom: 4px;
+	margin-bottom: 12px;
 }
 
 #contact-buttons {
 	text-align: center;
-	margin-left: 4px;
-	margin-right: 4px;
+	word-spacing: 4px;
 }
 
 #copyright {
