@@ -61,24 +61,24 @@ a, a:hover, a:active, a:visited {
 /* ===Social Buttons/Reusable components=== */
 .email-btn {
 	background-image: url("../img/mail_hex.png");
-	background-size: 32px 32px;
-	width: 32px;
+	background-size: cover;
+	width: 37px;
 	height: 32px;
 	display: inline-block;
 }
 
 .facebook-btn {
 	background-image: url("../img/facebook_hex.png");
-	background-size: 32px 32px;
-	width: 32px;
+	background-size: cover;
+	width: 37px;
 	height: 32px;
 	display: inline-block;
 }
 
 .twitter-btn {
 	background-image: url("../img/twitter_hex.png");
-	background-size: 32px 32px;
-	width: 32px;
+	background-size: cover;
+	width: 37px;
 	height: 32px;
 	display: inline-block;
 }
@@ -217,7 +217,7 @@ a, a:hover, a:active, a:visited {
 #entry-navigation-menu > *:active,
 #navigation-menu > *:hover,
 #navigation-menu > *:active {
-	background-color: #ffc539;
+	background-color: #f2430c;
 }
 
 /* ===About=== */
