@@ -95,7 +95,7 @@ a, a:hover, a:active, a:visited {
     background-size: cover;
 
     height: 100vmin;
-    max-height: 500px;
+    min-height: 500px;
     text-align: center;
 }
 
@@ -133,27 +133,12 @@ a, a:hover, a:active, a:visited {
 }
 
 /* ===Top Header => Logo + Register=== */
-@media (min-width: 500px) {
-	#entry-dead-center {
-		margin-top: 10vmin;
-		display: inline-block;
-		width: 80vw;
-		text-align: center;
-	}
+#entry-dead-center {
+	display: inline-block;
+	margin-top: 10vmin;
+	width: 80vw;
+	text-align: center;
 }
-@media (max-height: 500px) {
-	#entry-dead-center {
-		margin-top: 32px;
-		display: inline-block;
-		width: 80vw;
-		text-align: center;
-	}
-
-	#entry-middle-swhacks-intro {
-		max-height: 330px;
-	}
-}
-
 #entry-middle-swhacks-intro {
 	background-image: url("../img/website_header.png");
 	display: inline-block;
@@ -184,7 +169,7 @@ a, a:hover, a:active, a:visited {
 	#entry-navigation-menu {
 		position: absolute;
 		top: 100vmin;
-		min-height: 64px;
+		height: 64px;
 		background-color: #313849;
 		width: 100%;
 		margin-top: -64px;
@@ -207,8 +192,6 @@ a, a:hover, a:active, a:visited {
 	}
 }
 @media (max-width: 540px) {
-
-
 	#entry-navigation-menu {
 		display: none;
 	}
@@ -234,7 +217,7 @@ a, a:hover, a:active, a:visited {
 #entry-navigation-menu > *:active,
 #navigation-menu > *:hover,
 #navigation-menu > *:active {
-	background-color: rgb(116, 120, 130);
+	background-color: #f2430c;
 }
 
 /* ===About=== */
