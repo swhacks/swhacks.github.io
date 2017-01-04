@@ -153,7 +153,7 @@ a, a:hover, a:active, a:visited {
 	width: 120px;
 	height: 64px;
 	line-height: 64px;
-	background-color: yellow;
+	background-color: #ffd613;
 	color: #f2630c;
 	font-size: 14pt;
 	font-family: "raleway-medium", Arial, Tahoma;
@@ -217,7 +217,7 @@ a, a:hover, a:active, a:visited {
 #entry-navigation-menu > *:active,
 #navigation-menu > *:hover,
 #navigation-menu > *:active {
-	background-color: rgb(116, 120, 130);
+	background-color: #ffc539;
 }
 
 /* ===About=== */
