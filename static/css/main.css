@@ -184,9 +184,7 @@ a, a:hover, a:active, a:visited {
 		margin: 0px;
 		line-height: 64px;
 		width: 15%;
-		color: white;
 		font-size: 15pt;
-		font-family: "raleway-medium", Arial, Tahoma;
 	}
 
 	#navigation-menu {
@@ -209,28 +207,32 @@ a, a:hover, a:active, a:visited {
 	#navigation-menu > * {
 		height: 64px;
 		line-height: 64px;
-		color: white;
-		font-size: 15pt;
-		font-family: "raleway-medium", Arial, Tahoma;
 	}
 }
 
-/* ===Register Button=== */
-.register_button {
-	background-color: #ffd613;
-	font-size: 14pt;
-	font-family: "raleway-medium", Arial, Tahoma;
+#navigation-menu > a,
+#entry-navigation-menu > a {
+	color: white;
+	font-size: 15pt;
+	font-family: "raleway-medium", Arial, Tahoma;	
 }
-.register-button:active,
-.register-button:hover {
-	background-color: #313849;
+
+.register-button {
+	font-family: "raleway-bold", Arial, Tahoma;
+	font-size: 16px;
+	background-color: #ffd613;
+	color: #313849;
+}
+.register-button:hover,
+.register-button:active {
+	background-color: #ffd613;
 	color: white;
 }
 
-#entry-navigation-menu > *:hover,
-#entry-navigation-menu > *:active,
-#navigation-menu > *:hover,
-#navigation-menu > *:active {
+#entry-navigation-menu > a:hover,
+#entry-navigation-menu > a:active,
+#navigation-menu > a:hover,
+#navigation-menu > a:active {
 	background-color: #f2430c;
 }
 
