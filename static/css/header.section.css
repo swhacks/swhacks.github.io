@@ -2,6 +2,7 @@
 	background-image: url("../img/SWHacks_landing_bg.png");
 	background-repeat: repeat;
 	background-size: contain;
+	max-height: 91vh;
 }
 
 #hdr-top {

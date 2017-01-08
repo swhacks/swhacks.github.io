@@ -35,6 +35,11 @@
 		"text": "Schedule"
 	},
 	{
+		"selector": ".link-speakers",
+		"href": "#speakers",
+		"text": "Speakers"
+	},
+	{
 		"selector": ".link-sponsors",
 		"href": "#sponsors",
 		"text": "Sponsors"
