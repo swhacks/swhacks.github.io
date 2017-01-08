@@ -4,6 +4,11 @@
 	background-color: #313849;
 }
 
+#section-links-helper {
+	height: 0px;
+	min-height: 0px;
+}
+
 #section-links {
 }
 
