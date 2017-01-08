@@ -1,0 +1,47 @@
+[
+	{
+		"selector": ".facebook-btn",
+		"href": "https://www.facebook.com/swhacksofficial",
+		"text": ""
+	},
+	{
+		"selector": ".twitter-btn",
+		"href": "https://twitter.com/SWHacks_2017",
+		"text": ""
+	},
+	{
+		"selector": ".email-btn",
+		"href": "mailto:team@swhacks.io",
+		"text": ""
+	},
+	{
+		"selector": ".link-about",
+		"href": "#about",
+		"text": "About"
+	},
+	{
+		"selector": ".link-faq",
+		"href": "#faq",
+		"text": "FAQ"
+	},
+	{
+		"selector": ".link-register",
+		"href": "javascript:alert('Update href for .link-register in static/res/links.json');",
+		"text": "Register"
+	},
+	{
+		"selector": ".link-schedule",
+		"href": "#schedule",
+		"text": "Schedule"
+	},
+	{
+		"selector": ".link-sponsors",
+		"href": "#sponsors",
+		"text": "Sponsors"
+	},
+	{
+		"selector": ".link-contact",
+		"href": "#contact",
+		"text": "Contact"
+	}
+]
