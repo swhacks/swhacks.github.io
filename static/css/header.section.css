@@ -6,11 +6,11 @@
 
 #hdr-top {
 	width: 100%;
-	margin-top: 8px;
 }
 
 #hdr-top #hdr-top-left {
 	float: left;
+	margin-top: 8px;
 	margin-left: 8px;
 
 	font-size: 18pt;
@@ -19,6 +19,7 @@
 
 #hdr-top #hdr-top-right {
 	float: right;
+	margin-top: 8px;
 	margin-right: 8px;
 }
 

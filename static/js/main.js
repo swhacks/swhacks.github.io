@@ -44,7 +44,7 @@
 		var fixed = false;
 
 		var check = function cws() {
-			if(scrollY >= $(window).height()) {
+			if(scrollY >= $(window).height() - menu.getBoundingClientRect().height) {
 				menu.style.position = 'fixed';
 				menu.style.top = '0px';
 				hid.style.display = "block";
