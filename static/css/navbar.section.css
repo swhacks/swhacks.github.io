@@ -34,6 +34,7 @@
 }
 
 #section-links > *.link-register {
+	background-color: #ffd613;
 	color: #f2480c;
 }
 
