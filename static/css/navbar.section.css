@@ -40,4 +40,5 @@
 
 #section-links > *.link-register:hover {
 	color: white;
+	background-color: #f1580e;
 }
