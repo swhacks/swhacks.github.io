@@ -48,7 +48,6 @@
 
 			var scrollY = window.pageYOffset;
 			var h = help.getBoundingClientRect().top;
-			document.getElementById("debug").innerHTML = scrollY - h + " Top: " + h + " O: " + scrollY;
 			if(h < 0) {
 				menu.style.position = 'fixed';
 				menu.style.top = '0px';
