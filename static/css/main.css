@@ -66,6 +66,10 @@ a, a:hover, a:active, a:visited {
 	height: 32px;
 	display: inline-block;
 }
+.email-btn:hover,
+.email-btn:active {
+	background-image: url("../img/mail_hex_yellow.png");
+}
 
 .facebook-btn {
 	background-image: url("../img/facebook_hex.png");
@@ -74,6 +78,10 @@ a, a:hover, a:active, a:visited {
 	height: 32px;
 	display: inline-block;
 }
+.facebook-btn:hover,
+.facebook-btn:active {
+	background-image: url("../img/facebook_hex_yellow.png");
+}
 
 .twitter-btn {
 	background-image: url("../img/twitter_hex.png");
@@ -81,4 +89,8 @@ a, a:hover, a:active, a:visited {
 	width: 37px;
 	height: 32px;
 	display: inline-block;
+}
+.twitter-btn:hover,
+.twitter-btn:active {
+	background-image: url("../img/twitter_hex_yellow.png");
 }

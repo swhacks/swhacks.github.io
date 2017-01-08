@@ -17,6 +17,10 @@
 	text-align: center;
 	word-spacing: 4px;
 }
+#contact-buttons > * {
+	width: 46px;
+	height: 40px;
+}
 
 #copyright {
 	text-align: center;
