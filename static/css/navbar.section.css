@@ -10,7 +10,33 @@
 }
 
 #section-links {
+	text-align: center;
 }
 
-#section-links-placeholder {
+#section-links > * {
+	display: inline-block;
+	width: 120px;
+	height: 64px;
+	line-height: 64px;
+	font-family: "raleway-medium", Arial, Tahoma;
+	font-size: 15pt;
 }
+
+@media (max-width: 370px) {
+	#section-links > * {
+		width: 100px;
+	}
+}
+
+#section-links > *:hover {
+	color: white;
+	background-color: #f1580e;
+}
+
+#section-links > *.link-register {
+	color: #f2480c;
+}
+
+/*#section-links > *.link-register:hover {
+	color: white;
+}*/

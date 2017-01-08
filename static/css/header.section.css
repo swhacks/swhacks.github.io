@@ -27,6 +27,12 @@
 	padding-left: 10vw;
 }
 
+@media (max-width: 540px) {
+	#hdr-pic-pos {
+		padding-top: 50px;
+	}
+}
+
 #hdr-pic-pos #hdr-pic {
 	padding-top: 30px;
 	padding-top: 30px;
