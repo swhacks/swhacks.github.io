@@ -1,0 +1,37 @@
+#header {
+	background-image: url("../img/SWHacks_landing_bg.png");
+	background-repeat: repeat-x;
+	background-size: contain;
+}
+
+#hdr-top {
+	width: 100%;
+	margin-top: 8px;
+}
+
+#hdr-top #hdr-top-left {
+	float: left;
+	margin-left: 8px;
+
+	font-size: 18pt;
+	font-family: "raleway-light", Verdana, Tahoma;
+}
+
+#hdr-top #hdr-top-right {
+	float: right;
+	margin-right: 8px;
+}
+
+#hdr-pic-pos {
+	padding-left: 10vw;
+}
+
+#hdr-pic-pos #hdr-pic {
+	width: 80vw;
+	height: 31.09019vw;
+	max-height: 100vh;
+	background-image: url("../img/website_header.png");
+	background-size: contain;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
