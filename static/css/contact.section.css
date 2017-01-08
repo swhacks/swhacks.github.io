@@ -3,7 +3,8 @@
 	background-color: #495164;
 	background-image: url("../img/Contact_bg.png");
 	background-position: bottom;
-	background-size: cover;
+	background-size: 100%;
+	background-repeat: repeat;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -19,6 +20,6 @@
 
 #copyright {
 	text-align: center;
-	font-family: "raleway-regualr", tahoma, Arial;
+	font-family: "raleway-regular", tahoma, Arial;
 	font-size: 12pt;
 }

@@ -1,16 +1,17 @@
 /* ===Schedule=== */
 #schedule {
-	background: linear-gradient(#2f3545, #3b4252);
-	background: -webkit-linear-gradient(#2f3545, #3b4252);
-	background: -moz-linear-gradient(#2f3545, #3b4252);
-	background: -ms-linear-gradient(#2f3545, #3b4252);
-	background: -o-linear-gradient(#2f3545, #3b4252);
+	background-color: #2f3545;
 	padding-top: 20px;
 	text-align: center;
 }
 
 .schedule-tbl {
 	display: inline-block;
+	margin-bottom: 32px;
+}
+
+.schedule-tbl tr:hover {
+	background-color: #f1580e;
 }
 
 .schedule-tbl td {
@@ -18,7 +19,6 @@
 	padding-left: 24px;
 	padding-right: 24px;
 }
-
 .schedule-tbl td:nth-child(1) {
 	text-align: right;
 	border-right: 1px solid #C6C6C6;
@@ -30,4 +30,11 @@
 	text-align: left;
 	font-family: "raleway-light", Arial, Tahoma;
 	font-size: 18pt;
+}
+.schedule-tbl th {
+	font-family: "raleway-bold", Arial, Tahoma;
+	font-size: 20pt;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
