@@ -11,6 +11,20 @@
 		}
 	};
 
+	var getStylesheets = function getStylesheets() {
+		$.getJSON("static/res/stylesheets.json", function downloadedStylesheets(data) {
+			console.log(data);
+			head = document.querySelectorAll('head')[0];
+			for(var i = 0; i < data.length; i++) {
+				var elem = document.createElement('link');
+				elem.rel = "stylesheet";
+				elem.type = "text/css";
+				elem.href = "static/css/" + data[i].url;
+				head.appendChild(elem);
+			}
+		});
+	};
+
 	var getSponsors = function getSponsors() {
 		$.getJSON("static/res/sponsors.json", function downloadedSponsors(data) {
 			var target = document.querySelectorAll("#sponsors-flex")[0];
@@ -23,11 +37,12 @@
 				target.appendChild(elem);
 			}
 		});
-	}
+	};
 
 	//Initialize the website
 	$(document).ready(function doInit() {
 		linkFaqs();
+		getStylesheets();
 		getSponsors();
 
 		//Set the email addresses after a timeout. Kills spambots :)

@@ -1,0 +1,33 @@
+/* ===Schedule=== */
+#schedule {
+	background: linear-gradient(#2f3545, #3b4252);
+	background: -webkit-linear-gradient(#2f3545, #3b4252);
+	background: -moz-linear-gradient(#2f3545, #3b4252);
+	background: -ms-linear-gradient(#2f3545, #3b4252);
+	background: -o-linear-gradient(#2f3545, #3b4252);
+	padding-top: 20px;
+	text-align: center;
+}
+
+.schedule-tbl {
+	display: inline-block;
+}
+
+.schedule-tbl td {
+	padding: 8px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.schedule-tbl td:nth-child(1) {
+	text-align: right;
+	border-right: 1px solid #C6C6C6;
+	color: #C6C6C6;
+	font-family: "raleway-thin", Arial, Tahoma;
+	font-size: 18pt;
+}
+.schedule-tbl td:nth-child(2) {
+	text-align: left;
+	font-family: "raleway-light", Arial, Tahoma;
+	font-size: 18pt;
+}

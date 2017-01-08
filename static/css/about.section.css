@@ -1,0 +1,33 @@
+/* ===About=== */
+#about {
+	padding-top: 20px;
+	background-color: white;
+	padding-bottom: 20px;
+}
+
+#about-layout {
+	width: 90%;
+	margin-left: 5%;
+}
+
+#about-img {
+	display: inline-block;
+	width: 20vw;
+	max-width: 500px;
+	height: 20vw;
+	max-height: 500px;
+	background-image: url("../img/About_SWHacks.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#about-text {
+	color: black;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-family: "raleway-regular", Arial, Tahoma;
+	font-size: 12pt;
+}

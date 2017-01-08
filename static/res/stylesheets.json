@@ -1,0 +1,23 @@
+[
+	{
+		"url": "bootstrap.min.css"
+	},
+	{
+		"url": "main.css"
+	},
+	{
+		"url": "about.section.css"
+	},
+	{
+		"url": "schedule.section.css"
+	},
+	{
+		"url": "faq.section.css"
+	},
+	{
+		"url": "sponsors.section.css"
+	},
+	{
+		"url": "contact.section.css"
+	}
+]

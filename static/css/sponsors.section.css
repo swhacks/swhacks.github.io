@@ -1,0 +1,21 @@
+/* ===Sponsors=== */
+#sponsors {
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#sponsors-flex {
+	width: 80%;
+	margin-top: 20px;
+	margin-left: 10%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+#sponsors-header {
+	color: black;
+}

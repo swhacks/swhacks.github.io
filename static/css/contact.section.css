@@ -1,0 +1,24 @@
+/* ===Contact Us=== */
+#contact {
+	background-color: #495164;
+	background-image: url("../img/Contact_bg.png");
+	background-position: bottom;
+	background-size: cover;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#contact > * {
+	margin-bottom: 12px;
+}
+
+#contact-buttons {
+	text-align: center;
+	word-spacing: 4px;
+}
+
+#copyright {
+	text-align: center;
+	font-family: "raleway-regualr", tahoma, Arial;
+	font-size: 12pt;
+}
