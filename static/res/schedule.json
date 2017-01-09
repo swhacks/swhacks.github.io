@@ -7,15 +7,15 @@
 				"desc": "Sign in begins"
 			},
 			{
-				"time": "1:00pm to 4:30pm",
+				"time": "1:00pm - 4:30pm",
 				"desc": "Sponsor Fair"
 			},
 			{
-				"time": "5:00pm to 7:00pm",
+				"time": "5:00pm - 7:00pm",
 				"desc": "Opening Ceremony"
 			},
 			{
-				"time": "7:00pm to 8:00pm",
+				"time": "7:00pm - 8:00pm",
 				"desc": "Dinner* and Teambuilding"
 			},
 			{
@@ -32,15 +32,15 @@
 				"desc": "Midnight Snack*"
 			},
 			{
-				"time": "8:00am to 9:00am",
+				"time": "8:00am - 9:00am",
 				"desc": "Breakfast*"
 			},
 			{
-				"time": "12:00pm to 1:00pm",
+				"time": "12:00pm - 1:00pm",
 				"desc": "Lunch*"
 			},
 			{
-				"time": "8:00pm to 9:00pm",
+				"time": "8:00pm - 9:00pm",
 				"desc": "Dinner*"
 			}
 		]
@@ -54,18 +54,18 @@
 			},
 			{
 				"time": "8:00am",
-				"desc": "Hacking Stops"
+				"desc": "Hacking S-ps"
 			},
 			{
-				"time": "8:00am to 9:00am",
+				"time": "8:00am - 9:00am",
 				"desc": "Breakfast*"
 			},
 			{
-				"time": "9:15am to 10:30am",
+				"time": "9:15am - 10:30am",
 				"desc": "Tabled Judging"
 			},
 			{
-				"time": "10:45am to 12:00pm",
+				"time": "10:45am - 12:00pm",
 				"desc": "Closing Ceremony"
 			}
 		]
