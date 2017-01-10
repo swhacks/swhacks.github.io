@@ -68,9 +68,6 @@
 				}
 			}
 			schedule.appendChild(tbl);
-			var msg = document.createElement("h2");
-			msg.innerHTML = "*All meals are available for a la carte sponsorship. Let us know if you are interested in sponsoring a meal for our hungry hackers!";
-			schedule.appendChild(msg);
 		});
 	};
 
