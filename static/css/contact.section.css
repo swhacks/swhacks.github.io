@@ -3,10 +3,10 @@
 	background-color: #495164;
 	background-image: url("../img/Contact_bg.png");
 	background-position: bottom;
-	background-size: 100%;
-	background-repeat: repeat;
+	background-repeat: repeat-x;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	background-size: cover;
 }
 
 #contact > * {

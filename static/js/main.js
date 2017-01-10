@@ -111,10 +111,12 @@
 				var selector = data[i].selector;
 				var href = data[i].href;
 				var text = data[i].text;
+				var target = data[i].target;
 
 				$(selector).each(function setLink(x, obj) {
 					var o = $(obj);
 					o.attr('href', href);
+					if(target) o.attr('target', target);
 					o.html(text);
 				});
 			}

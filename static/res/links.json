@@ -2,17 +2,20 @@
 	{
 		"selector": ".facebook-btn",
 		"href": "https://www.facebook.com/swhacksofficial",
-		"text": ""
+		"text": "",
+		"target": "_blank"
 	},
 	{
 		"selector": ".twitter-btn",
-		"href": "https://twitter.com/SWHacks_2017",
-		"text": ""
+		"href": "https://twitter.com/SWHacksOfficial",
+		"text": "",
+		"target": "_blank"
 	},
 	{
 		"selector": ".email-btn",
 		"href": "mailto:team@swhacks.io",
-		"text": ""
+		"text": "",
+		"target": "_blank"
 	},
 	{
 		"selector": ".link-about",

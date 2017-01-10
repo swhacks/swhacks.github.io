@@ -17,8 +17,6 @@
 
 .schedule-tbl td {
 	padding: 8px;
-	padding-left: 24px;
-	padding-right: 24px;
 }
 .schedule-tbl td:nth-child(1) {
 	text-align: right;
@@ -26,11 +24,13 @@
 	color: #C6C6C6;
 	font-family: "raleway-thin", Arial, Tahoma;
 	font-size: 18pt;
+	padding-right: 24px;
 }
 .schedule-tbl td:nth-child(2) {
 	text-align: left;
 	font-family: "raleway-light", Arial, Tahoma;
 	font-size: 18pt;
+	padding-left: 24px;
 }
 .schedule-tbl th {
 	font-family: "raleway-bold", Arial, Tahoma;
