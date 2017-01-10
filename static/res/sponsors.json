@@ -1,10 +1,38 @@
 [
 	{
-		"company": "a",
-		"img": "a.JPG",
-		"desc": "Company a",
-		"img_width": "100px",
-		"img_height": "32px",
-		"sponsor_type": "N/A"
+		"company": "Allstate",
+		"desc": "Allstate",
+		"href": "https://www.allstate.com/",
+		"sponsor_level": "1",
+		"img": "allstate.jpg",
+		"img_width": "200px",
+		"img_height": "143px"
+	},
+	{
+		"company": "American Express",
+		"desc": "American Express",
+		"href": "https://americanexpress.com/",
+		"sponsor_level": "1",
+		"img": "amex.png",
+		"img_width": "200px",
+		"img_height": "62px"
+	},
+	{
+		"company": "GoDaddy",
+		"desc": "GoDaddy",
+		"href": "https://www.godaddy.com/",
+		"sponsor_level": "1",
+		"img": "godaddy.png",
+		"img_width": "200px",
+		"img_height": "56px"
+	},
+	{
+		"company": "Workiva",
+		"desc": "Workiva",
+		"href": "https://www.workiva.com/",
+		"sponsor_level": "1",
+		"img": "workiva.png",
+		"img_width": "200px",
+		"img_height": "75px"
 	}
 ]

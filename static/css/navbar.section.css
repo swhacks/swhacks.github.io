@@ -1,6 +1,5 @@
 .section-links {
 	width: 100%;
-	min-height: 64px;
 	background-color: #313849;
 }
 
@@ -16,8 +15,6 @@
 #section-links > * {
 	display: inline-block;
 	width: 120px;
-	height: 64px;
-	line-height: 64px;
 	font-family: "raleway-medium", Arial, Tahoma;
 	font-size: 15pt;
 }
@@ -41,4 +38,23 @@
 #section-links > *.link-register:hover {
 	color: white;
 	background-color: #f1580e;
+}
+
+@media (max-height: 480px) {
+	.section-links {
+		min-height: 48px;
+	}
+	#section-links > * {
+		height: 48px;
+		line-height: 48px;
+	}
+}
+@media (min-height: 481px) {
+	.section-links {
+		min-height: 64px;
+	}
+	#section-links > * {
+		height: 64px;
+		line-height: 64px;
+	}
 }

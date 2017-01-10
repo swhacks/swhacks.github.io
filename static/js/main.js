@@ -41,16 +41,29 @@
 	};
 
 	var getSponsors = function getSponsors() {
+		var createSponsor = function createSponsor(tgt, data, i) {
+			var elem = document.createElement('a');
+			elem.className = "sponsor";
+
+			if(data[i].href)
+				elem.href = data[i].href;
+
+			elem.style.width = data[i].img_width;
+			elem.style.height = data[i].img_height;
+			elem.style.backgroundImage = "url('static/img/sponsor_logos/" + data[i].img + "')";
+			elem.style.backgroundSize = "100%";
+			elem.target = "_blank";
+
+			tgt.appendChild(elem);
+		};
+
 		$.getJSON("static/res/sponsors.json", function downloadedSponsors(data) {
 			var target = document.querySelectorAll("#sponsors-flex")[0];
+
 			for(var i = 0; i < data.length; i++) {
-				var elem = document.createElement("img");
-				elem.src = "static/img/sponsor_logos/" + data[i].img;
-				elem.style.width = data[i].img_width;
-				elem.style.height = data[i].img_height;
-				elem.alt = data[i].company + ": " + data[i].desc;
-				target.appendChild(elem);
+				createSponsor(target, data, i);
 			}
+
 			exit_launch();
 		});
 	};
