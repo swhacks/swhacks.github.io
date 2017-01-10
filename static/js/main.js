@@ -84,6 +84,10 @@
 
 			var scrollY = window.pageYOffset;
 			var h = help.getBoundingClientRect().top;
+
+			//If we are overflowing, disable fixation
+			if(menu.getBoundingClientRect().height > 72)
+				h = 1;
 			if(h < 0) {
 				menu.style.position = 'fixed';
 				menu.style.top = '0px';
@@ -98,9 +102,11 @@
 
 		}
 
+		//Initial
 		check();
 
 		window.addEventListener('scroll', check);
+		window.addEventListener('resize', check);
 	};
 
 	var getLinks = function getLinks() {
