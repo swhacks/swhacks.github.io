@@ -1,4 +1,18 @@
-(function init() {
+;(function init() {
+	var num_launched = 0;
+	var on_exit = function null_on_exit() {};
+
+	//Launched a function, incrementing number of launched functions
+	var launch = function launch(func) {
+		num_launched++;
+		if(func)
+			func();
+	};
+	var exit_launch = function exit_launch() {
+		num_launched--;
+		on_exit();
+	};
+
 	//Turn the FAQ questions to links so that users can send a link to an FAQ.
 	//The page will automatically scroll to one of these FAQs if a link to one is clicked
 	var linkFaqs = function linkFaqs() {
@@ -9,6 +23,7 @@
 			var loc = window.location.origin + "#faq-" + i;
 			links[i].innerHTML = "<a href='" + loc + "'>" + text + "</a>";
 		}
+		exit_launch();
 	};
 
 	var getStylesheets = function getStylesheets() {
@@ -21,6 +36,7 @@
 				elem.href = "static/css/" + data[i].url;
 				head.appendChild(elem);
 			}
+			exit_launch();
 		});
 	};
 
@@ -35,6 +51,7 @@
 				elem.alt = data[i].company + ": " + data[i].desc;
 				target.appendChild(elem);
 			}
+			exit_launch();
 		});
 	};
 
@@ -68,6 +85,7 @@
 				}
 			}
 			schedule.appendChild(tbl);
+			exit_launch();
 		});
 	};
 
@@ -106,6 +124,11 @@
 		window.addEventListener('resize', check);
 	};
 
+	var max = function max(a, b) {
+		if(a > b) return a;
+		else return b;
+	}
+
 	var getLinks = function getLinks() {
 		$.getJSON("static/res/links.json", function processLinks(data) {
 			console.log(data);
@@ -123,17 +146,33 @@
 					o.html(text);
 				});
 			}
+			exit_launch();
 		});
 	};
 
 	//Initialize the website
 	$(document).ready(function doInit() {
-		linkFaqs();
-		getStylesheets();
-		getSponsors();
-		getLinks();
-		getSchedule();
-		enableStickyNavbar();
+		launch(linkFaqs);
+		launch(getStylesheets);
+		launch(getSponsors);
+		launch(getLinks);
+		launch(getSchedule());
+
+		on_exit = function exit_func() {
+			if(num_launched > 0) return;
+			enableStickyNavbar();
+			setTimeout(function animate() {
+				if(window.location.hash.length > 2)
+					$('html, body').animate({
+						scrollTop: max(0, $(window.location.hash).offset().top - 64) + 'px'
+					}, 1000, 'swing');
+			}, 300);
+		};
+
+		setTimeout(function force_postinit() {
+			num_launched = 0;
+			on_exit();
+		}, 10000);
 
 		//Set the email addresses after a timeout. Kills spambots :)
 		setTimeout(function setEmailAddresses() {
