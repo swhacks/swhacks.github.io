@@ -11,10 +11,6 @@
 	margin-bottom: 32px;
 }
 
-.schedule-tbl tr:hover {
-	background-color: #f1580e;
-}
-
 .schedule-tbl td {
 	padding: 8px;
 }
