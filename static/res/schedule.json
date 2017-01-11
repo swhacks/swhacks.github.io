@@ -16,7 +16,7 @@
 			},
 			{
 				"time": "7:00pm - 8:00pm",
-				"desc": "Dinner* and Teambuilding"
+				"desc": "Dinner and Teambuilding"
 			},
 			{
 				"time": "8:00pm",
@@ -29,19 +29,19 @@
 		"schedule": [
 			{
 				"time": "12:00am",
-				"desc": "Midnight Snack*"
+				"desc": "Midnight Snack"
 			},
 			{
 				"time": "8:00am - 9:00am",
-				"desc": "Breakfast*"
+				"desc": "Breakfast"
 			},
 			{
 				"time": "12:00pm - 1:00pm",
-				"desc": "Lunch*"
+				"desc": "Lunch"
 			},
 			{
 				"time": "8:00pm - 9:00pm",
-				"desc": "Dinner*"
+				"desc": "Dinner"
 			}
 		]
 	},
@@ -50,7 +50,7 @@
 		"schedule": [
 			{
 				"time": "12:00am",
-				"desc": "Midnight Snack*"
+				"desc": "Midnight Snack"
 			},
 			{
 				"time": "8:00am",
@@ -58,7 +58,7 @@
 			},
 			{
 				"time": "8:00am - 9:00am",
-				"desc": "Breakfast*"
+				"desc": "Breakfast"
 			},
 			{
 				"time": "9:15am - 10:30am",
