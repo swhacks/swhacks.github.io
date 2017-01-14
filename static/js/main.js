@@ -1,3 +1,4 @@
+var globals = globals || {};
 ;(function init() {
 	var num_launched = 0;
 	var on_exit = function null_on_exit() {};
@@ -119,11 +120,13 @@
 			if(h < 0) {
 				menu.style.position = 'fixed';
 				menu.style.top = '0px';
+				menu.style.borderBottom = '1px solid white';
 				hid.style.display = "block";
 				fixed = true;
 			} else {
 				menu.style.position = 'static';
 				menu.style.top = '';
+				menu.style.borderBottom = '';
 				hid.style.display = "none";
 				fixed = false;
 			}
@@ -163,6 +166,12 @@
 		});
 	};
 
+	globals.scrollTo = globals.scrollTo || function scrollTo(elem) {
+		$('html, body').animate({
+			scrollTop: max(0, $(elem).offset().top - 64) + 'px'
+		}, 1000, 'swing');
+	}
+
 	//Initialize the website
 	$(document).ready(function doInit() {
 		launch(linkFaqs);
@@ -176,9 +185,10 @@
 			enableStickyNavbar();
 			setTimeout(function animate() {
 				if(window.location.hash.length > 2)
-					$('html, body').animate({
-						scrollTop: max(0, $(window.location.hash).offset().top - 64) + 'px'
-					}, 1000, 'swing');
+					globals.scrollTo(window.location.hash);
+					// $('html, body').animate({
+					// 	scrollTop: max(0, $(window.location.hash).offset().top - 64) + 'px'
+					// }, 1000, 'swing');
 			}, 300);
 		};
 

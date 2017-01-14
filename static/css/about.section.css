@@ -6,21 +6,20 @@
 }
 
 #about > #about-text {
-	width: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 90%;
+	margin-left: 5%;
 	display: inline-block;
 	color: black;
 	font-family: "raleway-regular", Arial, Tahoma;
-	font-size: 12pt;
+	font-size: 13pt;
 }
 
-@media (min-width: 700px) {
+/*@media (min-width: 700px) {
 	#about > #about-text {
 		font-size: 20pt;
 	}
 }
-
+*/
 #about #about-pic {
 	width: 280px;
 	height: 224px;

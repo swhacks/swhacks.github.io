@@ -11,8 +11,8 @@
 
 #hdr-top #hdr-top-left {
 	float: left;
-	margin-top: 8px;
-	margin-left: 8px;
+	margin-top: 16px;
+	margin-left: 16px;
 
 	font-size: 18pt;
 	font-family: "raleway-light", Verdana, Tahoma;
@@ -20,8 +20,9 @@
 
 #hdr-top #hdr-top-right {
 	float: right;
-	margin-top: 8px;
-	margin-right: 8px;
+	word-spacing: 4px;
+	margin-top: 16px;
+	margin-right: 16px;
 }
 
 #hdr-pic-pos {

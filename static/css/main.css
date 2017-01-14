@@ -47,7 +47,7 @@ h2 {
 	font-size: 16pt;
 }
 
-a, a:hover, a:active, a:visited {
+a, a:hover, a:active, a:visited, a:focus {
 	text-decoration: none;
 	color: inherit;
 }

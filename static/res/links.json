@@ -19,12 +19,12 @@
 	},
 	{
 		"selector": ".link-about",
-		"href": "#about",
+		"href": "javascript:globals.scrollTo('#about')",
 		"text": "About"
 	},
 	{
 		"selector": ".link-faq",
-		"href": "#faq",
+		"href": "javascript:globals.scrollTo('#faq')",
 		"text": "FAQ"
 	},
 	{
@@ -34,22 +34,22 @@
 	},
 	{
 		"selector": ".link-schedule",
-		"href": "#schedule",
+		"href": "javascript:globals.scrollTo('#schedule')",
 		"text": "Schedule"
 	},
 	{
 		"selector": ".link-speakers",
-		"href": "#speakers",
+		"href": "javascript:globals.scrollTo('#speakers')",
 		"text": "Speakers"
 	},
 	{
 		"selector": ".link-sponsors",
-		"href": "#sponsors",
+		"href": "javascript:globals.scrollTo('#sponsors')",
 		"text": "Sponsors"
 	},
 	{
 		"selector": ".link-contact",
-		"href": "#contact",
+		"href": "javascript:globals.scrollTo('#contact')",
 		"text": "Contact"
 	}
 ]
