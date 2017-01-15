@@ -1,12 +1,12 @@
 /* ===Contact Us=== */
 #contact {
 	background-color: #495164;
-	background-image: url("../img/Contact_bg.png");
+	background-image: url("../img/Contact_bg_strip.png");
 	background-position: bottom;
 	background-repeat: repeat-x;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-size: cover;
+	background-size: contain;
 }
 
 #contact > * {
