@@ -1,0 +1,32 @@
+[
+	{
+		"url": "bootstrap.min.css"
+	},
+	{
+		"url": "main.css"
+	},
+	{
+		"url": "header.section.css"
+	},
+	{
+		"url": "navbar.section.css"
+	},
+	{
+		"url": "about.section.css"
+	},
+	{
+		"url": "schedule.section.css"
+	},
+	{
+		"url": "faq.section.css"
+	},
+	{
+		"url": "speakers.section.css"
+	},
+	{
+		"url": "sponsors.section.css"
+	},
+	{
+		"url": "contact.section.css"
+	}
+]

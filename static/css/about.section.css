@@ -1,0 +1,44 @@
+/* ===About=== */
+#about {
+	padding-top: 20px;
+	background-color: white;
+	padding-bottom: 20px;
+}
+
+#about > #about-text {
+	width: 90%;
+	margin-left: 5%;
+	display: inline-block;
+	color: black;
+	font-family: "raleway-regular", Arial, Tahoma;
+	font-size: 15pt;
+}
+
+/*@media (min-width: 700px) {
+	#about > #about-text {
+		font-size: 20pt;
+	}
+}
+*/
+#about #about-pic {
+	width: 280px;
+	height: 224px;
+	background-image: url("../img/About_SWHacks.png");
+	background-position: 50% 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 425px) {
+	#about #about-pic {
+		width: 100%;
+		height: 224px;
+		float: none;
+	}
+}
+
+@media (min-width: 426px) {
+	#about #about-pic {
+		float: left;
+	}
+}

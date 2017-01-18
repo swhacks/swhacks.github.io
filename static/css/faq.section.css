@@ -1,0 +1,27 @@
+#faq {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: linear-gradient(#f2630c, #f6840e);
+	background: -webkit-linear-gradient(#f2630c, #f6840e);
+	background: -moz-linear-gradient(#f2630c, #f6840e);
+	background: -ms-linear-gradient(#f2630c, #f6840e);
+	background: -o-linear-gradient(#f2630c, #f6840e);
+}
+
+#faq-container {
+	width: 90%;
+	margin-left: 5%;
+}
+
+#faq-container > h2 {
+	font-family: "raleway-semibold", Arial, Tahoma;
+	font-size: 18pt;
+	text-align: left;
+	color: #ffe360;
+}
+
+#faq-container > hp {
+	font-family: "raleway-regular", Arial, Tahoma;
+	font-size: 12pt;
+	text-align: left;
+}

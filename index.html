@@ -1,90 +1,132 @@
 <!DOCTYPE html>
-<!--suppress HtmlUnknownTarget -->
-<html lang="en">
+<html>
 
     <head>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="tab icon" href="static/img/SWH_ico.ico">
-        <title>SWHACKS 2017</title>
+        <meta name="description" content="Southwest Hacks">
+        <meta name="author" content="Arizona State University/Software Developers' Association">
 
-        <!-- Bootstrap Core CSS -->
-        <link href='static/css/bootstrap.min.css' rel="stylesheet">
-        
-        <!-- Font Awesome -->
-        <script src="https://use.fontawesome.com/e58aa28473.js"></script>
+        <title>#SWHacks17</title>
 
-        <!-- Custom CSS -->
-        <link href='static/css/custom.css' rel="stylesheet">
+        <script type="text/javascript" src="static/js/jquery.js"></script>
+        <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="static/js/main.js"></script>
 
-        <!-- Preview Thumbnail -->
-        <meta property="og:image" content="http://swhacks.io/static/img/SWH_preview_thumbnail.JPG"/>
-        <meta property="og:title" content="SWHACKS: The Southwest's Regional Hackathon"/>
-        <meta property="og:description" content="Come join hundreds of other passionate hackers at the biggest hacking experience in the Southwest, hosted by SoDA."
+        <meta property="og:image" content="http://swhacks.io/static/img/SWH_preview_thumbnail.JPG">
+
+        <meta property="og:title" content="SWHACKS: The Southwest's Regional Hackathon">
+
+        <meta property="og:description" content="Come join hundreds of passionate hackers at the biggest hacking experience in the Southwest, hosted by SoDA">
+
     </head>
 
     <body>
-        
-        <div class="background-header">
-            <div class="row row-centered" style="margin-top: 8%">
-                <div class="col-lg-4 col-md-6 col-sm-8 col-xs-9 col-centered">
-                    <div class="row row-centered">
-                        <div class="seperator"/>
-                        <div class="resizing-title">SWHACKS</div>
-                        <div class="seperator"/>
-                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 col-centered">
-                            <img class="img img-responsive center-block" style="margin-top: 10px" src="static/img/SWH_gradiant_hexagon.png"/>
-                        </div>
-                        <div class="seperator"/>
-                        <div class="row row-centered">
-                            <form action="//swhacks.us13.list-manage.com/subscribe/post?u=11e094edce755c9358f612548&amp;id=d52048fc0f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                <div class="input-row">
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_11e094edce755c9358f612548_d52048fc0f" tabindex="-1" value=""></div>
-                                    <span>
-                                        <input class="basic-slide" name="EMAIL" id="mce-EMAIL" type="email" placeholder="Enter Your Primary Email Address" /><label for="name">Email</label>
-                                    </span>
-                                </div>
-                                <input type="submit" class="btn btn-warning btn-outline" id="mc-embedded-subscribe" value="Sign Up" name="subscribe" />
-                            </form>
-                        </div>
-                        <p style="padding-top: 25px">Are you interested in sponsoring SWHACKS? Email <a href="mailto:sponsor@swhacks.io" style="color: #FF2D00"> sponsor@swhacks.io </a>for more information!</p>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <a href="https://www.facebook.com/swhacksofficial">
-                                <img src="static/img/facebook_hex.png" alt="Facebook"
-                                    style="width:48px; height:48px; margin-top: 55px">
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <a href="https://twitter.com/SWHacks_2017">
-                                <img src="static/img/twitter_hex.png" alt="Twitter"
-                                    style="width:48px; height:48px; margin-top: 55px">
-                            </a>
-                        </div>
-                        <p style="padding-top: 10px; font-size: 60%">Copyright © 2016 SWHACKS</p>
-                    </div>
+
+        <div id="header" class="tl-block">
+
+            <div id="hdr-top">
+                <div id="hdr-top-left">
+                    <a class="facebook-btn"></a>
+                    <a class="twitter-btn"></a>
+                    #SWHacks17
                 </div>
             </div>
+
+            <div id="hdr-pic-pos">
+                <div id="hdr-pic"></div>
+            </div>
+
+            <a class="register-link" id="hdr-reg-btn"></a>
+
         </div>
-        
-        
-        <script type="text/javascript" src="static/js/jquery.js"></script>
-        <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
-        
-        <!-- scroll scripts -->
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $(".smooth-scroll").click(function(event) {
-                    var target = $(this).attr("href");
-                    var main = $("#main-parallax:not(:animated)");
-                    var destination = $(target).offset().top + main.scrollTop();
-                    main.animate({scrollTop: destination}, 1000);
-                    $(this).blur();
-                    return false;
-                } );
-            } );
-        </script>
+
+        <div id="section-links-helper"></div>
+
+        <div id="section-links" class="section-links tl-block">
+            <a class="link-register"></a>
+            <a class="link-about"></a>
+            <a class="link-schedule"></a>
+            <a class="link-faq"></a>
+        </div>
+
+        <div id="section-links-placeholder" class="section-links tl-block">&nbsp;</div>
+
+        <div id="about" class="tl-block">
+
+            <div id="about-text">
+                <div id="about-pic"></div>
+                Here at Southwest Hacks, we believe a hack is more than just a creative solution to a problem. A hack should bring people together and make them proud of their accomplishments; it becomes great when something is learned in the process. A Hackathon is a competition that fosters learning, creating, and collaborating in an energetic environment which inspires everyone to do their best work. Southwest Hacks is cultivating a tradition of excellence within the growing community of hackers in the Southwest. Together we can grow a technical culture which embodies innovation and a sense of community that persists beyond our weekend-long journey!
+            </div>
+
+        </div>
+
+        <div id="schedule" class="tl-block">
+
+            <h1>Schedule</h1>
+
+        </div>
+
+        <div id="faq" class="tl-block">
+
+            <h1>FAQ</h1>
+
+            <div id="faq-container">
+
+                <h2>What is a Hackathon? Why are we Hacking?</h2>
+                <p>A hackathon is a competition in which small teams quickly build a solution to a problem. Here, <i>"Hack"</i> takes the meaning, <i>a clever solution to an interesting problem.</i>
+
+                <h2>What do I Build?</h2>
+                <p>Anything your heart desires! You could build an iPhone application, a troupe of acobatic drones, or Skynet!</p>
+
+                <h2>How much does this event cost?</h2>
+                <p>It's free! Hackerspace and meals are provided at no cost to you!</p>
+
+                <h2>I am a Beginner. Should I Participate?</h2>
+                <p>Of course! Hackathons are some of the most rapid learning experiences you could hope for. Even if you are new to something, there are a host of hackers who are in the same boat, and experienced hackers who are ready to give you a boost!</p>
+
+                <h2>What if I don't have a team?</h2>
+                <p>We will be running team formation and ideation workships at the beginning of the event to help you find others to work with.</p>
+
+                <h2>What Should I Bring?</h2>
+                <p>A laptop computer, charger, and basic amenities such as a sleeping bag, pillow, and toothbrush and any other hacking supplies you need!</p>
+
+            </div>
+
+        </div>
+
+        <div id="speakers" class="tl-block">
+
+            <h1>Speakers</h1>
+
+        </div>
+
+        <div id="sponsors" class="tl-block">
+
+            <h1 id="sponsors-header">Sponsors</h1>
+            <div id="sponsors-flex">
+            </div>
+
+        </div>
+
+        <div id="contact" class="tl-block">
+
+            <h1>Contact Us</h1>
+
+            <div id="contact-buttons">
+
+                <a class="email-btn" href="javascript:alert('Email link...');">&nbsp;</a>
+                <a class="facebook-btn" href="javascript:alert('Facebook link...');">&nbsp;</a>
+                <a class="twitter-btn" href="javascript:alert('Twitter link...');">&nbsp;</a>
+
+            </div>
+
+            <p id="copyright">&copy; The Software Developers Association 2016-2017</p>
+
+        </div>
+        <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
     </body>
+
+</html>

@@ -1,0 +1,55 @@
+[
+	{
+		"selector": ".facebook-btn",
+		"href": "https://www.facebook.com/swhacksofficial",
+		"text": "",
+		"target": "_blank"
+	},
+	{
+		"selector": ".twitter-btn",
+		"href": "https://twitter.com/SWHacksOfficial",
+		"text": "",
+		"target": "_blank"
+	},
+	{
+		"selector": ".email-btn",
+		"href": "mailto:team@swhacks.io",
+		"text": "",
+		"target": "_blank"
+	},
+	{
+		"selector": ".link-about",
+		"href": "javascript:globals.scrollTo('#about')",
+		"text": "About"
+	},
+	{
+		"selector": ".link-faq",
+		"href": "javascript:globals.scrollTo('#faq')",
+		"text": "FAQ"
+	},
+	{
+		"selector": ".link-register",
+		"href": "https://swhacks.typeform.com/to/pczgRa",
+		"text": "Register"
+	},
+	{
+		"selector": ".link-schedule",
+		"href": "javascript:globals.scrollTo('#schedule')",
+		"text": "Schedule"
+	},
+	{
+		"selector": ".link-speakers",
+		"href": "javascript:globals.scrollTo('#speakers')",
+		"text": "Speakers"
+	},
+	{
+		"selector": ".link-sponsors",
+		"href": "javascript:globals.scrollTo('#sponsors')",
+		"text": "Sponsors"
+	},
+	{
+		"selector": ".link-contact",
+		"href": "javascript:globals.scrollTo('#contact')",
+		"text": "Contact"
+	}
+]

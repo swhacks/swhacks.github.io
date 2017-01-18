@@ -1,0 +1,96 @@
+/* ===Font=== */
+@font-face {
+	font-family: "raleway-regular";
+	src: url("../res/Raleway-Regular.ttf");
+}
+@font-face {
+	font-family: "raleway-medium";
+	src: url("../res/Raleway-Medium.ttf");
+}
+@font-face {
+	font-family: "raleway-light";
+	src: url("../res/Raleway-Light.ttf");
+}
+@font-face {
+	font-family: "raleway-heavy";
+	src: url("../res/Raleway-Heavy.ttf");
+}
+@font-face {
+	font-family: "raleway-semibold";
+	src: url("../res/Raleway-SemiBold.ttf");
+}
+@font-face {
+	font-family: "raleway-heavy";
+	src: url("../res/Raleway-Heavy.ttf");
+}
+
+/* ===Set up=== */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f2430c;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	font-family: "raleway-heavy", Arial, Tahoma;
+	font-size: 30pt;
+	margin: 0px;
+}
+
+h2 {
+	text-align: center;
+	font-family: "raleway-bold", Arial, Tahoma;
+	font-size: 16pt;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* ===Layout=== */
+.tl-block {
+	width: 100%;
+	min-height: 100px;
+}
+
+/* ===Social Buttons/Reusable components=== */
+.email-btn {
+	background-image: url("../img/mail_hex.png");
+	background-size: cover;
+	width: 37px;
+	height: 32px;
+	display: inline-block;
+}
+.email-btn:hover,
+.email-btn:active {
+	background-image: url("../img/mail_hex_yellow.png");
+}
+
+.facebook-btn {
+	background-image: url("../img/facebook_hex.png");
+	background-size: cover;
+	width: 37px;
+	height: 32px;
+	display: inline-block;
+}
+.facebook-btn:hover,
+.facebook-btn:active {
+	background-image: url("../img/facebook_hex_yellow.png");
+}
+
+.twitter-btn {
+	background-image: url("../img/twitter_hex.png");
+	background-size: cover;
+	width: 37px;
+	height: 32px;
+	display: inline-block;
+}
+.twitter-btn:hover,
+.twitter-btn:active {
+	background-image: url("../img/twitter_hex_yellow.png");
+}

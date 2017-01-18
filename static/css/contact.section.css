@@ -1,0 +1,29 @@
+/* ===Contact Us=== */
+#contact {
+	background-color: #495164;
+	background-image: url("../img/Contact_bg_strip.png");
+	background-position: bottom;
+	background-repeat: repeat-x;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-size: contain;
+}
+
+#contact > * {
+	margin-bottom: 12px;
+}
+
+#contact-buttons {
+	text-align: center;
+	word-spacing: 8px;
+}
+#contact-buttons > * {
+	width: 46px;
+	height: 40px;
+}
+
+#copyright {
+	text-align: center;
+	font-family: "raleway-regular", tahoma, Arial;
+	font-size: 12pt;
+}
