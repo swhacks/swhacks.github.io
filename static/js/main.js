@@ -175,7 +175,7 @@ var globals = globals || {};
 	//Initialize the website
 	$(document).ready(function doInit() {
 		launch(linkFaqs);
-		launch(getStylesheets);
+		//launch(getStylesheets);
 		launch(getSponsors);
 		launch(getLinks);
 		launch(getSchedule());
