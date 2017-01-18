@@ -34,14 +34,14 @@
 		"img": "workiva.png",
 		"img_width": "200px",
 		"img_height": "75px"
-	},
-	{
-		"company": "MLH",
-		"desc": "MLH",
-		"href": "https://mlh.io/",
-		"sponsor_level": "1",
-		"img": "mlh.png",
-		"img_width": "200px",
-		"img_height": "123px"
 	}
+	// {
+	// 	"company": "MLH",
+	// 	"desc": "MLH",
+	// 	"href": "https://mlh.io/",
+	// 	"sponsor_level": "1",
+	// 	"img": "mlh.png",
+	// 	"img_width": "200px",
+	// 	"img_height": "123px"
+	// }
 ]
