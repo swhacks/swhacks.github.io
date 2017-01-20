@@ -28,6 +28,7 @@
 
 #hdr-pic-pos {
 	padding-left: 10vw;
+	padding-right: 10vw;
 }
 
 @media (max-width: 540px) {
