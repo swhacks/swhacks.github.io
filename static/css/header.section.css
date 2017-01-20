@@ -38,11 +38,20 @@
 
 #hdr-pic-pos #hdr-pic {
 	padding-top: 30px;
-	padding-top: 30px;
 	width: 75vw;
 	height: 31.09019vw;
 	max-height: 100vh;
 	background-image: url("../img/website_header.png");
+	background-size: contain;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+}
+
+#hdr-pic-pos #hdr-pic-mobile {
+	width: 75vw;
+	height: 40.0vh;
+	max-height: 100vh;
+	background-image: url("../img/mobile_website_header.png");
 	background-size: contain;
 	background-position: 50% 100%;
 	background-repeat: no-repeat;
