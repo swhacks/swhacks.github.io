@@ -1,6 +1,7 @@
 .section-links {
 	width: 100%;
 	background-color: #313849;
+	min-height: 60px;
 }
 
 #section-links-helper {
@@ -8,53 +9,80 @@
 	min-height: 0px;
 }
 
-#section-links {
-	text-align: center;
-}
-
-#section-links > * {
-	display: inline-block;
-	width: 120px;
-	font-family: "raleway-medium", Arial, Tahoma;
-	font-size: 15pt;
-}
-
-@media (max-width: 370px) {
-	#section-links > * {
-		width: 100px;
+@media (max-width: 991px) {
+	.link-container {
+		margin: 0 auto;
+		max-width: auto;
+		font-size: 0;
+		text-align: center;
 	}
 }
 
-#section-links > *:hover {
-	color: white;
-	background-color: #f1580e;
-}
-
-#section-links > *.link-register {
-	background-color: #ffd613;
-	color: #f2480c;
-}
-
-#section-links > *.link-register:hover {
-	color: white;
-	background-color: #f1580e;
-}
-
-@media (max-height: 480px) {
-	.section-links {
-		min-height: 48px;
-	}
-	#section-links > * {
-		height: 48px;
-		line-height: 48px;
+@media (min-width: 992px) {
+	.link-container {
+		margin: 0 auto;
+		width: 50%;
+		font-size: 0;
+		text-align: center;
 	}
 }
-@media (min-height: 481px) {
-	.section-links {
-		min-height: 64px;
-	}
-	#section-links > * {
+
+@media (max-width: 767px) {
+	.link-button {
+		width: 25%;
+		font-size: 4.5vw;
+
+		display: inline-block;
 		height: 64px;
 		line-height: 64px;
+		font-family: "raleway-medium", Arial, Tahoma;
+		text-align: center;
 	}
+}
+
+@media (min-width: 768px) {
+	.link-button {
+		width: 25%;
+		font-size: 2.75vw;
+
+		display: inline-block;
+		height: 64px;
+		line-height: 64px;
+		font-family: "raleway-medium", Arial, Tahoma;
+		text-align: center;
+	}
+}
+
+@media (min-width: 992px) {
+	.link-button {
+		width: 120px;
+		font-size: 15pt;
+		display: inline-block;
+		height: 64px;
+		line-height: 64px;
+		font-family: "raleway-medium", Arial, Tahoma;
+		text-align: center;
+	}
+}
+
+a.link-button-register {
+	color: #f2480c;
+	background-color: #ffd613;
+}
+
+.link-button:hover {
+	color: white;
+	background-color: #f1580e;
+}
+
+.link-button-register:hover {
+	color: white;
+	background-color: #f1580e;
+}
+
+.link-navbar-fixed {
+	position: fixed;
+	top: 0px;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
 }
