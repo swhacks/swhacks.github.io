@@ -1,17 +1,8 @@
 var globals = globals || {};
 ;(function init() {
-	var num_launched = 0;
-	var on_exit = function null_on_exit() {};
-
 	//Launched a function, incrementing number of launched functions
 	var launch = function launch(func) {
-		num_launched++;
-		if(func)
-			func();
-	};
-	var exit_launch = function exit_launch() {
-		num_launched--;
-		on_exit();
+		return func();
 	};
 
 	//Turn the FAQ questions to links so that users can send a link to an FAQ.
@@ -25,20 +16,6 @@ var globals = globals || {};
 			links[i].innerHTML = "<a href='" + loc + "'>" + text + "</a>";
 		}
 		exit_launch();
-	};
-
-	var getStylesheets = function getStylesheets() {
-		$.getJSON("static/res/stylesheets.json", function downloadedStylesheets(data) {
-			head = document.querySelectorAll('head')[0];
-			for(var i = 0; i < data.length; i++) {
-				var elem = document.createElement('link');
-				elem.rel = "stylesheet";
-				elem.type = "text/css";
-				elem.href = "static/css/" + data[i].url;
-				head.appendChild(elem);
-			}
-			exit_launch();
-		});
 	};
 
 	var getSponsors = function getSponsors() {
@@ -103,43 +80,6 @@ var globals = globals || {};
 		});
 	};
 
-	var enableStickyNavbar = function enableStickyNavbar() {
-		// var menu = document.querySelectorAll("#section-links")[0];
-		// var hid = document.querySelectorAll(".link-container")[0];
-		// var help = document.querySelectorAll(".link-container")[0];
-		// var fixed = false;
-
-		// var check = function cws() {
-
-		// 	var scrollY = window.pageYOffset;
-		// 	var h = help.getBoundingClientRect().top;
-
-		// 	//If we are overflowing, disable fixation
-		// 	if(menu.getBoundingClientRect().height > 72)
-		// 		h = 1;
-		// 	if(h < 0) {
-		// 		menu.style.position = 'fixed';
-		// 		menu.style.top = '0px';
-		// 		menu.style.borderBottom = '1px solid white';
-		// 		hid.style.display = "block";
-		// 		fixed = true;
-		// 	} else {
-		// 		menu.style.position = 'static';
-		// 		menu.style.top = '';
-		// 		menu.style.borderBottom = '';
-		// 		hid.style.display = "none";
-		// 		fixed = false;
-		// 	}
-
-		// }
-
-		// //Initial
-		// check();
-
-		// window.addEventListener('scroll', check);
-		// window.addEventListener('resize', check);
-	};
-
 	var max = function max(a, b) {
 		if(a > b) return a;
 		else return b;
@@ -190,10 +130,10 @@ var globals = globals || {};
 	//Initialize the website
 	$(document).ready(function doInit() {
 		var $navbar = $("#section-links");
-		var y_pos = $navbar.offset().top;
-		
+
 		function resize() {
 			var scrollTop = $(this).scrollTop();
+			var y_pos = $navbar.offset().top;
 			if (scrollTop > y_pos) {
 				$navbar.addClass("link-navbar-fixed");
 			} else {
@@ -202,34 +142,12 @@ var globals = globals || {};
 		}
 		
 		$(document).scroll(throttle(50, resize));
-
-		$(window).resize(throttle(50, function() {
-			y_pos = $navbar.offset().top;
-			resize();
-		}));
+		$(window).resize(throttle(50, resize));
 
 		launch(linkFaqs);
-		//launch(getStylesheets);
 		launch(getSponsors);
 		//launch(getLinks);
 		launch(getSchedule());
-
-		on_exit = function exit_func() {
-			// if(num_launched > 0) return;
-			// enableStickyNavbar();
-			// setTimeout(function animate() {
-			// 	if(window.location.hash.length > 2)
-			// 		globals.scrollTo(window.location.hash);
-			// 		// $('html, body').animate({
-			// 		// 	scrollTop: max(0, $(window.location.hash).offset().top - 64) + 'px'
-			// 		// }, 1000, 'swing');
-			// }, 300);
-		};
-
-		setTimeout(function force_postinit() {
-			num_launched = 0;
-			on_exit();
-		}, 10000);
 
 		//Set the email addresses after a timeout. Kills spambots :)
 		setTimeout(function setEmailAddresses() {
