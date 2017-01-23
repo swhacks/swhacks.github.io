@@ -34,5 +34,14 @@
 		"img": "workiva.png",
 		"img_width": "200px",
 		"img_height": "75px"
+	},
+	{
+		"company": "GitHub",
+		"desc": "GitHub",
+		"href": "https://www.github.com/",
+		"sponsor_level": "1",
+		"img": "github.png",
+		"img_width": "200px",
+		"img_height": "54px"
 	}
 ]
