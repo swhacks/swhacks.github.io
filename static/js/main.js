@@ -211,7 +211,7 @@ var globals = globals || {};
 		launch(linkFaqs);
 		//launch(getStylesheets);
 		launch(getSponsors);
-		//launch(getLinks);
+		launch(getLinks);
 		launch(getSchedule());
 
 		on_exit = function exit_func() {
