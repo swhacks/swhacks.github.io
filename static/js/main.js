@@ -168,46 +168,12 @@ var globals = globals || {};
 
 	globals.scrollTo = globals.scrollTo || function scrollTo(elem) {
 		$('html, body').animate({
-			scrollTop: max(0, $(elem).offset().top - 64) + 'px'
+			scrollTop: max(0, $(elem).offset().top) + 'px'
 		}, 1000, 'swing');
-	}
-
-
-	function throttle(ms, fn) {
-		var allow = true;
-		function enable() {
-			allow = true;
-		}
-		return function() {
-			if (allow) {
-				allow = false;
-				setTimeout(enable, ms);
-				fn.call(this);
-			}
-		}
 	}
 
 	//Initialize the website
 	$(document).ready(function doInit() {
-		var $navbar = $("#section-links");
-		var y_pos = $navbar.offset().top;
-		
-		function resize() {
-			var scrollTop = $(this).scrollTop();
-			if (scrollTop > y_pos) {
-				$navbar.addClass("link-navbar-fixed");
-			} else {
-				$navbar.removeClass("link-navbar-fixed");
-			}
-		}
-		
-		$(document).scroll(throttle(50, resize));
-
-		$(window).resize(throttle(50, function() {
-			y_pos = $navbar.offset().top;
-			resize();
-		}));
-
 		launch(linkFaqs);
 		//launch(getStylesheets);
 		launch(getSponsors);
