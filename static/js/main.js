@@ -199,7 +199,7 @@ var globals = globals || {};
 
 		//Set the email addresses after a timeout. Kills spambots :)
 		setTimeout(function setEmailAddresses() {
-			$(".email-btn").attr("href", "mailto" + ":contac" + "t@swhacks.io");
+			$(".email-btn").attr("href", "mailto" + ":tea" + "m@swhacks.io");
 		}, 1000);
 	});
 })();
