@@ -42,7 +42,7 @@
 	width: 75vw;
 	height: 31.09019vw;
 	max-height: 100vh;
-	background-image: url("../img/website_header.png");
+	background-image: url("static/img/website_header.png");
 	background-size: contain;
 	background-position: 50% 100%;
 	background-repeat: no-repeat;
@@ -52,7 +52,7 @@
 	width: 75vw;
 	height: 40.0vh;
 	max-height: 100vh;
-	background-image: url("../img/mobile_website_header.png");
+	background-image: url("static/img/mobile_website_header.png");
 	background-size: contain;
 	background-position: 50% 100%;
 	background-repeat: no-repeat;
