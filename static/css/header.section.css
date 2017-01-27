@@ -37,23 +37,10 @@
 	}
 }
 
-#hdr-pic-pos #hdr-pic {
-	padding-top: 30px;
-	width: 75vw;
-	height: 31.09019vw;
-	max-height: 100vh;
-	background-image: url("static/img/website_header.png");
-	background-size: contain;
-	background-position: 50% 100%;
-	background-repeat: no-repeat;
+#header-img {
+	padding: 1vh 3vw 2vh 3vw;
 }
 
-#hdr-pic-pos #hdr-pic-mobile {
-	width: 75vw;
-	height: 40.0vh;
-	max-height: 100vh;
-	background-image: url("static/img/mobile_website_header.png");
-	background-size: contain;
-	background-position: 50% 100%;
-	background-repeat: no-repeat;
+#header-img-mobile {
+	padding: 2vh 4vw 3vh 4vw;
 }
