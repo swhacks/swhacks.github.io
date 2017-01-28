@@ -94,3 +94,15 @@ a, a:hover, a:active, a:visited, a:focus {
 .twitter-btn:active {
 	background-image: url("../img/twitter_hex_yellow.png");
 }
+
+.instagram-btn {
+	background-image: url("../img/instagram_hex.png");
+	background-size: cover;
+	width: 37px;
+	height: 32px;
+	display: inline-block;
+}
+.instagram-btn:hover,
+.instagram-btn:active {
+	background-image: ("../img/instagram_hex_yellow.png");
+}
