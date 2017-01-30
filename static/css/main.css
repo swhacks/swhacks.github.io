@@ -104,5 +104,5 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 .instagram-btn:hover,
 .instagram-btn:active {
-	background-image: ("../img/instagram_hex_yellow.png");
+	background-image: url("../img/instagram_hex_yellow.png");
 }
