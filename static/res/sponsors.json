@@ -1,5 +1,12 @@
 [
 	{
+		"company": "Recruiting AI",
+		"desc": "Recruiting AI",
+		"href": "https://recruiting.ai/",
+		"img": "recruiting.ai.png",
+		"img_width": "200px"
+	},
+	{
 		"company": "Sunquest",
 		"desc": "Sunquest",
 		"href": "https://sunquestinfo.com/",
@@ -9,16 +16,16 @@
 	{
 		"company": "Recruiting Ventures",
 		"desc": "Recruiting Ventures",
-		"href": "",
+		"href": "http://www.recruitingventures.com/",
 		"img": "",
 		"img_width": ""
 	},
 	{
 		"company": "Career Center",
 		"desc": "ASU Career Center",
-		"href": "",
-		"img": "",
-		"img_width": ""
+		"href": "https://engineering.asu.edu/career/",
+		"img": "asu_career_ctr.jpg",
+		"img_width": "200px"
 	},
 	{
 		"company": "State Farm",
@@ -30,14 +37,14 @@
 	{
 		"company": "CIDSE",
 		"desc": "Ira A. Fulton Schools of Engineering",
-		"href": "",
+		"href": "https://cidse.engineering.asu.edu/",
 		"img": "",
 		"img_width": ""
 	},
 	{
 		"company": "Ira A. Fulton Schools of Engineering",
 		"desc": "Ira A. Fulton Schools of Engineering",
-		"href": "",
+		"href": "https://engineering.asu.edu/",
 		"img": "",
 		"img_width": ""
 	},
@@ -86,14 +93,14 @@
 	{
 		"company": "Pyramid Technologies",
 		"desc": "Pyramid Technologies",
-		"href": "",
+		"href": "https://pyramidacceptors.com/",
 		"img": "",
 		"img_width": ""
 	},
 	{
 		"company": "Revolution Parts",
 		"desc": "Revolution Parts",
-		"href": "",
+		"href": "https://www.revolutionparts.com/",
 		"img": "",
 		"img_width": ""
 	},
@@ -123,13 +130,6 @@
 		"desc": "GitHub",
 		"href": "https://www.github.com/",
 		"img": "github.png",
-		"img_width": "200px"
-	},
-	{
-		"company": "Recruiting AI",
-		"desc": "Recruiting AI",
-		"href": "https://recruiting.ai/",
-		"img": "recruiting.ai.png",
 		"img_width": "200px"
 	}
 ]
