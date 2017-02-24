@@ -1,47 +1,135 @@
 [
 	{
+		"company": "Sunquest",
+		"desc": "Sunquest",
+		"href": "https://sunquestinfo.com/",
+		"img": "sunquest.png",
+		"img_width": "200px"
+	},
+	{
+		"company": "Recruiting Ventures",
+		"desc": "Recruiting Ventures",
+		"href": "",
+		"img": "",
+		"img_width": ""
+	},
+	{
+		"company": "Career Center",
+		"desc": "ASU Career Center",
+		"href": "",
+		"img": "",
+		"img_width": ""
+	},
+	{
+		"company": "State Farm",
+		"desc": "State Farm",
+		"href": "https://statefarm.com/",
+		"img": "State_Farm_logo.png",
+		"img_width": "200px"
+	},
+	{
+		"company": "CIDSE",
+		"desc": "Ira A. Fulton Schools of Engineering",
+		"href": "",
+		"img": "",
+		"img_width": ""
+	},
+	{
+		"company": "Ira A. Fulton Schools of Engineering",
+		"desc": "Ira A. Fulton Schools of Engineering",
+		"href": "",
+		"img": "",
+		"img_width": ""
+	},
+	{
+		"company": "Honeywell",
+		"desc": "Honeywell",
+		"href": "https://honeywell.com/",
+		"img": "",
+		"img_width": ""
+	},
+	{
+		"company": "Galvanize",
+		"desc": "Galvanize",
+		"href": "https://galvanize.com/",
+		"img": "",
+		"img_width": ""
+	},
+	{
+		"company": "Google",
+		"desc": "Google",
+		"href": "https://google.com/",
+		"img": "google.png",
+		"img_width": "200px"
+	},
+	{
 		"company": "Allstate",
 		"desc": "Allstate",
 		"href": "https://www.allstate.com/",
-		"sponsor_level": "1",
 		"img": "allstate.jpg",
-		"img_width": "200px",
-		"img_height": "143px"
-	},
-	{
-		"company": "American Express",
-		"desc": "American Express",
-		"href": "https://americanexpress.com/",
-		"sponsor_level": "1",
-		"img": "amex.png",
-		"img_width": "200px",
-		"img_height": "62px"
+		"img_width": "200px"
 	},
 	{
 		"company": "GoDaddy",
 		"desc": "GoDaddy",
 		"href": "https://www.godaddy.com/",
-		"sponsor_level": "1",
 		"img": "godaddy.png",
-		"img_width": "200px",
-		"img_height": "56px"
+		"img_width": "200px"
+	},
+	{
+		"company": "Amazon",
+		"desc": "Amazon",
+		"href": "https://amazon.com/",
+		"img": "",
+		"img_width": ""
+	},
+	{
+		"company": "Pyramid Technologies",
+		"desc": "Pyramid Technologies",
+		"href": "",
+		"img": "",
+		"img_width": ""
+	},
+	{
+		"company": "Revolution Parts",
+		"desc": "Revolution Parts",
+		"href": "",
+		"img": "",
+		"img_width": ""
+	},
+	{
+		"company": "Connexta",
+		"desc": "Connexta",
+		"href": "http://connexta.com",
+		"img": "",
+		"img_width": ""
+	},
+	{
+		"company": "American Express",
+		"desc": "American Express",
+		"href": "https://americanexpress.com/",
+		"img": "amex.png",
+		"img_width": "200px"
 	},
 	{
 		"company": "Workiva",
 		"desc": "Workiva",
 		"href": "https://www.workiva.com/",
-		"sponsor_level": "1",
 		"img": "workiva.png",
-		"img_width": "200px",
-		"img_height": "75px"
+		"img_width": "200px"
 	},
 	{
 		"company": "GitHub",
 		"desc": "GitHub",
 		"href": "https://www.github.com/",
-		"sponsor_level": "1",
 		"img": "github.png",
-		"img_width": "200px",
-		"img_height": "54px"
+		"img_width": "200px"
+	},
+	{
+		"company": "Recruiting AI",
+		"desc": "Recruiting AI",
+		"href": "https://recruiting.ai/",
+		"img": "recruiting.ai.png",
+		"img_width": "200px"
 	}
 ]
