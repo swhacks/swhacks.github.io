@@ -1,18 +1,5 @@
 var globals = globals || {};
 ;(function init() {
-    var num_launched = 0;
-    var on_exit = function null_on_exit() {};
-
-    //Launched a function, incrementing number of launched functions
-    var launch = function launch(func) {
-        num_launched++;
-        if(func)
-            func();
-    };
-    var exit_launch = function exit_launch() {
-        num_launched--;
-        on_exit();
-    };
 
     //Turn the FAQ questions to links so that users can send a link to an FAQ.
     //The page will automatically scroll to one of these FAQs if a link to one is clicked
@@ -24,7 +11,6 @@ var globals = globals || {};
             var loc = window.location.origin + "#faq-" + i;
             links[i].innerHTML = "<a href='" + loc + "'>" + text + "</a>";
         }
-        exit_launch();
     };
 
     var getStylesheets = function getStylesheets() {
@@ -37,25 +23,32 @@ var globals = globals || {};
                 elem.href = "static/css/" + data[i].url;
                 head.appendChild(elem);
             }
-            exit_launch();
         });
     };
 
     var getSponsors = function getSponsors() {
         var createSponsor = function createSponsor(tgt, data, i) {
-            var elem = document.createElement('a');
-            elem.className = "sponsor";
+            if(!data[i].img) {
+                console.log("Please fix: " + data[i] + " (" + data[i].company + ")");
+                return;
+            }
 
+
+            var link = document.createElement('a');
+            var img = document.createElement('img');
+            link.className = 'sponsor';
             if(data[i].href)
-                elem.href = data[i].href;
+                link.href = data[i].href;
+            link.target = '_blank';
 
-            elem.style.width = data[i].img_width;
-            elem.style.height = data[i].img_height;
-            elem.style.backgroundImage = "url('static/img/sponsor_logos/" + data[i].img + "')";
-            elem.style.backgroundSize = "100%";
-            elem.target = "_blank";
+            img.src = 'static/img/sponsor_logos/' + data[i].img;
+            img.alt = data[i].desc;
+            img.style.width = data[i].img_width;
+            img.style.maxWidth = '85vw';
+            img.style.height = 'auto';
 
-            tgt.appendChild(elem);
+            link.appendChild(img);
+            tgt.appendChild(link);
         };
 
         $.getJSON("static/res/sponsors.json", function downloadedSponsors(data) {
@@ -64,8 +57,6 @@ var globals = globals || {};
             for(var i = 0; i < data.length; i++) {
                 createSponsor(target, data, i);
             }
-
-            exit_launch();
         });
     };
 
@@ -99,55 +90,19 @@ var globals = globals || {};
                 }
             }
             schedule.appendChild(tbl);
-            exit_launch();
         });
     };
 
     var enableStickyNavbar = function enableStickyNavbar() {
-        // var menu = document.querySelectorAll("#section-links")[0];
-        // var hid = document.querySelectorAll(".link-container")[0];
-        // var help = document.querySelectorAll(".link-container")[0];
-        // var fixed = false;
-
-        // var check = function cws() {
-
-        // 	var scrollY = window.pageYOffset;
-        // 	var h = help.getBoundingClientRect().top;
-
-        // 	//If we are overflowing, disable fixation
-        // 	if(menu.getBoundingClientRect().height > 72)
-        // 		h = 1;
-        // 	if(h < 0) {
-        // 		menu.style.position = 'fixed';
-        // 		menu.style.top = '0px';
-        // 		menu.style.borderBottom = '1px solid white';
-        // 		hid.style.display = "block";
-        // 		fixed = true;
-        // 	} else {
-        // 		menu.style.position = 'static';
-        // 		menu.style.top = '';
-        // 		menu.style.borderBottom = '';
-        // 		hid.style.display = "none";
-        // 		fixed = false;
-        // 	}
-
-        // }
-
-        // //Initial
-        // check();
-
-        // window.addEventListener('scroll', check);
-        // window.addEventListener('resize', check);
     };
 
     var max = function max(a, b) {
         if(a > b) return a;
-        else return b;
-    }
+        return b;
+    };
 
     var getLinks = function getLinks() {
         $.getJSON("static/res/links.json", function processLinks(data) {
-            console.log(data);
             for(var i = 0; i < data.length; i++) {
                 //Add the link
                 var selector = data[i].selector;
@@ -162,7 +117,6 @@ var globals = globals || {};
                     o.html(text);
                 });
             }
-            exit_launch();
         });
     };
 
@@ -174,28 +128,10 @@ var globals = globals || {};
 
     //Initialize the website
     $(document).ready(function doInit() {
-        launch(linkFaqs);
-        //launch(getStylesheets);
-        launch(getSponsors);
-        launch(getLinks);
-        launch(getSchedule());
-
-        on_exit = function exit_func() {
-            // if(num_launched > 0) return;
-            // enableStickyNavbar();
-            // setTimeout(function animate() {
-            // 	if(window.location.hash.length > 2)
-            // 		globals.scrollTo(window.location.hash);
-            // 		// $('html, body').animate({
-            // 		// 	scrollTop: max(0, $(window.location.hash).offset().top - 64) + 'px'
-            // 		// }, 1000, 'swing');
-            // }, 300);
-        };
-
-        setTimeout(function force_postinit() {
-            num_launched = 0;
-            on_exit();
-        }, 10000);
+        linkFaqs();
+        getSponsors();
+        getLinks();
+        getSchedule();
 
         //Set the email addresses after a timeout. Kills spambots :)
         setTimeout(function setEmailAddresses() {
