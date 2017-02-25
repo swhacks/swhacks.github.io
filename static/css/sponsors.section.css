@@ -1,35 +1,89 @@
 /* ===Sponsors=== */
 #sponsors {
-	background-color: white;
-	padding-top: 20px;
-	padding-bottom: 20px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #sponsors-flex {
-	width: 80%;
-	margin-top: 20px;
-	margin-left: 10%;
-	display: flex;
-	flex: 1 1 auto;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-/*	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-*/}
-
-#sponsors-header {
-	color: black;
+  padding: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-#sponsors .sponsor {
-	-webkit-transition: 0.25s all ease-in-out;
-	-moz-transition: 0.25s all ease-in-out;
-	-ms-transition: 0.25s all ease-in-out;
-	-o-transition: 0.25s all ease-in-out;
-	transition: 0.25s all ease-in-out;
+#sponsors-header {
+    color: black;
+}
 
-	margin: 20px;
+/*#sponsors .sponsor {
+    -webkit-transition: 0.25s all ease-in-out;
+    -moz-transition: 0.25s all ease-in-out;
+    -ms-transition: 0.25s all ease-in-out;
+    -o-transition: 0.25s all ease-in-out;
+    transition: 0.25s all ease-in-out;
+}*/
+
+.sponsors-gold { 
+    max-height: 75px;
+    max-width: 150px;
+    padding-left: 19.44px;
+    padding-right: 19.44px;
+    padding-top: 14.58px;
+    padding-bottom: 14.58px;
+}
+
+.sponsors-turquoise {
+    max-height: 115px;
+    max-width: 200px;
+    padding-left: 19.44px;
+    padding-right: 19.44px;
+    padding-top: 14.58px;
+    padding-bottom: 14.58px;
+}
+
+.sponsors-topaz {
+    max-height: 135px;
+    max-width: 200px;
+    padding-left: 19.44px;
+    padding-right: 19.44px;
+    padding-top: 14.58px;
+    padding-bottom: 14.58px;
+}
+
+.sponsors-ruby {
+    max-height: 175px;
+    max-width: 275px;
+    padding-left: 19.44px;
+    padding-right: 19.44px;
+    padding-top: 14.58px;
+    padding-bottom: 14.58px;
+}
+
+.sponsors-amethyst {
+    max-height: 200px;
+    max-width: 350px;
+    padding-left: 19.44px;
+    padding-right: 19.44px;
+    padding-top: 14.58px;
+    padding-bottom: 14.58px;
+}
+
+.sponsors-diamond {
+    max-height: 300px;
+    max-width: 75px;
+    padding-left: 19.44px;
+    padding-right: 19.44px;
+    padding-top: 9.72px;
+    padding-bottom: 9.72px;
 }

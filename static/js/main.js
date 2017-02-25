@@ -43,9 +43,7 @@ var globals = globals || {};
 
             img.src = 'static/img/sponsor_logos/' + data[i].img;
             img.alt = data[i].desc;
-            img.style.width = data[i].img_width;
-            img.style.maxWidth = '85vw';
-            img.style.height = 'auto';
+            img.className = data[i].class;
 
             link.appendChild(img);
             tgt.appendChild(link);
@@ -129,7 +127,7 @@ var globals = globals || {};
     //Initialize the website
     $(document).ready(function doInit() {
         linkFaqs();
-        getSponsors();
+        // getSponsors();
         getLinks();
         getSchedule();
 
