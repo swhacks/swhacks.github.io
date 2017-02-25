@@ -13,31 +13,9 @@ var globals = globals || {};
         }
     };
 
-    var enableStickyNavbar = function enableStickyNavbar() {
-    };
-
-    var max = function max(a, b) {
+    function max(a, b) {
         if(a > b) return a;
         return b;
-    };
-
-    var getLinks = function getLinks() {
-        $.getJSON("static/res/links.json", function processLinks(data) {
-            for(var i = 0; i < data.length; i++) {
-                //Add the link
-                var selector = data[i].selector;
-                var href = data[i].href;
-                var text = data[i].text;
-                var target = data[i].target;
-
-                $(selector).each(function setLink(x, obj) {
-                    var o = $(obj);
-                    o.attr('href', href);
-                    if(target) o.attr('target', target);
-                    o.html(text);
-                });
-            }
-        });
     };
 
     globals.scrollTo = globals.scrollTo || function scrollTo(elem) {
@@ -49,7 +27,6 @@ var globals = globals || {};
     //Initialize the website
     $(document).ready(function doInit() {
         linkFaqs();
-        getLinks();
 
         //Set the email addresses after a timeout. Kills spambots :)
         setTimeout(function setEmailAddresses() {
