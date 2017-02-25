@@ -41,6 +41,10 @@
     padding-right: 19.44px;
     padding-top: 14.58px;
     padding-bottom: 14.58px;
+    opacity: .75;
+}
+.sponsors-gold:hover {
+    opacity: 1;
 }
 
 .sponsors-turquoise {
@@ -50,6 +54,10 @@
     padding-right: 19.44px;
     padding-top: 14.58px;
     padding-bottom: 14.58px;
+    opacity: .75;
+}
+.sponsors-turquoise:hover {
+    opacity: 1;
 }
 
 .sponsors-topaz {
@@ -59,6 +67,10 @@
     padding-right: 19.44px;
     padding-top: 14.58px;
     padding-bottom: 14.58px;
+    opacity: .75;
+}
+.sponsors-topaz:hover {
+    opacity: 1;
 }
 
 .sponsors-ruby {
@@ -68,6 +80,10 @@
     padding-right: 19.44px;
     padding-top: 14.58px;
     padding-bottom: 14.58px;
+    opacity: .75;
+}
+.sponsors-ruby:hover {
+    opacity: 1;
 }
 
 .sponsors-amethyst {
@@ -77,6 +93,10 @@
     padding-right: 19.44px;
     padding-top: 14.58px;
     padding-bottom: 14.58px;
+    opacity: .75;
+}
+.sponsors-amethyst:hover {
+    opacity: 1;
 }
 
 .sponsors-diamond {
@@ -86,4 +106,8 @@
     padding-right: 19.44px;
     padding-top: 9.72px;
     padding-bottom: 9.72px;
+    opacity: .75;
+}
+.sponsors-diamond:hover {
+    opacity: 1;
 }
