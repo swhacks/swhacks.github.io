@@ -26,37 +26,37 @@ var globals = globals || {};
         });
     };
 
-    var getSponsors = function getSponsors() {
-        var createSponsor = function createSponsor(tgt, data, i) {
-            if(!data[i].img) {
-                console.log("Please fix: " + data[i] + " (" + data[i].company + ")");
-                return;
-            }
+    // var getSponsors = function getSponsors() {
+    //     var createSponsor = function createSponsor(tgt, data, i) {
+    //         if(!data[i].img) {
+    //             console.log("Please fix: " + data[i] + " (" + data[i].company + ")");
+    //             return;
+    //         }
 
 
-            var link = document.createElement('a');
-            var img = document.createElement('img');
-            link.className = 'sponsor';
-            if(data[i].href)
-                link.href = data[i].href;
-            link.target = '_blank';
+    //         var link = document.createElement('a');
+    //         var img = document.createElement('img');
+    //         link.className = 'sponsor';
+    //         if(data[i].href)
+    //             link.href = data[i].href;
+    //         link.target = '_blank';
 
-            img.src = 'static/img/sponsor_logos/' + data[i].img;
-            img.alt = data[i].desc;
-            img.className = data[i].class;
+    //         img.src = 'static/img/sponsor_logos/' + data[i].img;
+    //         img.alt = data[i].desc;
+    //         img.className = data[i].class;
 
-            link.appendChild(img);
-            tgt.appendChild(link);
-        };
+    //         link.appendChild(img);
+    //         tgt.appendChild(link);
+    //     };
 
-        $.getJSON("static/res/sponsors.json", function downloadedSponsors(data) {
-            var target = document.querySelectorAll("#sponsors-flex")[0];
+    //     $.getJSON("static/res/sponsors.json", function downloadedSponsors(data) {
+    //         var target = document.querySelectorAll("#sponsors-flex")[0];
 
-            for(var i = 0; i < data.length; i++) {
-                createSponsor(target, data, i);
-            }
-        });
-    };
+    //         for(var i = 0; i < data.length; i++) {
+    //             createSponsor(target, data, i);
+    //         }
+    //     });
+    // };
 
     var getSchedule = function getSchedule() {
         $.getJSON("static/res/schedule.json", function downloadedSchedule(data) {
