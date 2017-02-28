@@ -1,0 +1,13 @@
+User-agent: *
+Crawl-delay: 2
+# CSS, JS, Images
+Allow: /static/css/*.css$
+Allow: /static/css/*.css?
+Allow: /static/js/*.js$
+Allow: /static/js/*.js?
+Allow: /static/img/*.gif
+Allow: /static/img/*.jpg
+Allow: /static/img/*.jpeg
+Allow: /static/img/*.png
+# Directories
+Disallow: /static/res/
