@@ -1,0 +1,47 @@
+/* ===Partners=== */
+#partners {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.partners-flex {
+  padding: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-logo {
+    max-height: 400px;
+    max-width: 200px;
+    padding-left: 19.44px;
+    padding-right: 19.44px;
+    padding-top: 9.72px;
+    padding-bottom: 9.72px;
+    opacity: .75;
+}
+
+#partners-header {
+    color: black;
+}
+
+/*#partners .sponsor {
+    -webkit-transition: 0.25s all ease-in-out;
+    -moz-transition: 0.25s all ease-in-out;
+    -ms-transition: 0.25s all ease-in-out;
+    -o-transition: 0.25s all ease-in-out;
+    transition: 0.25s all ease-in-out;
+}*/
+
+
