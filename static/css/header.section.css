@@ -1,46 +1,62 @@
-#header {
-	background-image: url("../img/SWHacks_landing_bg.png");
-	background-repeat: repeat;
-	background-size: contain;
-	/*max-height: 91vh;*/
-	min-height: 20vh;
+.header-container {
+    background-image: url("../img/header_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
-#hdr-top {
-	width: 100%;
+.header-flex {
+    min-height: 100vh;
+    max-height: 100vh;
+    display: -ms-flex; 
+    display: -webkit-flex; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-#hdr-top #hdr-top-left {
-	float: left;
-	margin-top: 16px;
-	margin-left: 16px;
-
-	font-size: 18pt;
-	font-family: "raleway-light", Verdana, Tahoma;
+.header-img {
+    flex-grow: 7;
+    background-image: url("../img/website_header.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
 }
 
-#hdr-top #hdr-top-right {
-	float: right;
-	word-spacing: 4px;
-	margin-top: 16px;
-	margin-right: 16px;
+.header-buttons {
+    flex-grow: 3;
 }
 
-#hdr-pic-pos {
-	padding-left: 10vw;
-	padding-right: 10vw;
+.register-button {
+    width: 100%;
+    margin: auto 0;
 }
 
-@media (max-width: 540px) {
-	#hdr-pic-pos {
-		padding-top: 50px;
-	}
+.volunteer-button {
+    width: 100%;
+    margin: auto 0;
 }
 
-#header-img {
-	padding: 5vh 3vw 5vh 3vw;
+.section-links {
+    width: 100%;
+    background-color: #313849;
+    min-height: 10vh;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
 }
 
-#header-img-mobile {
-	padding: 2vh 4vw 3vh 4vw;
+#section-links-helper {
+    height: 0px;
+    min-height: 0px;
+}
+
+.link-container {
+    margin: 0 auto;
+    max-width: auto;
+    font-size: 0;
+    text-align: center;
 }
