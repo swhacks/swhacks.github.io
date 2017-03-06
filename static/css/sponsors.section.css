@@ -60,6 +60,10 @@
     opacity: 1;
 }
 
+.sponsors-kind {
+    max-height: 90px;
+}
+
 .sponsors-topaz {
     max-height: 135px;
     max-width: 200px;
