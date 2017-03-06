@@ -18,19 +18,17 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    margin-bottom: 20px;
 }
 
 .speakers-bio-pic {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .speakers-bio {
     color: black;
     font-family: "raleway-regular", Arial, Tahoma;
     text-align: center;
-    margin: 0 20px;
+    margin: 10px 15px 0px 15px;
 }
 
 .speakers-img {
@@ -39,10 +37,9 @@
 }
 
 .speakers-desc {
-    padding: 10px;
     font-family: "raleway-regular", Arial, Tahoma;
     color: black;
-    margin: 0% 5%;
+    margin: 20px 5% 20px 5%;
 }
 
 .speakers-desc>p>a {
