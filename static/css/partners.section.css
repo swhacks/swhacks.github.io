@@ -6,7 +6,7 @@
 }
 
 .partners-flex {
-  padding: 0;
+  padding-top: 10px;
   margin-left: 10%;
   margin-right: 10%;
   list-style: none;
@@ -23,13 +23,17 @@
 }
 
 .partners-logo {
-    max-height: 400px;
-    max-width: 200px;
+    max-height: 100px;
+    max-width: 250px;
     padding-left: 19.44px;
     padding-right: 19.44px;
     padding-top: 9.72px;
     padding-bottom: 9.72px;
     opacity: .75;
+}
+
+.partners-logo:hover {
+    opacity: 1;
 }
 
 #partners-header {
