@@ -106,3 +106,19 @@ a, a:hover, a:active, a:visited, a:focus {
 .instagram-btn:active {
 	background-image: url("../img/instagram_hex_yellow.png");
 }
+
+.mail-industry:link {
+	color: #FF8C00;
+}
+
+.mail-industry:visited {
+	color: #D90000;
+}
+
+.mail-industry:hover {
+	color: #D90000;
+}
+
+.mail-industry:active {
+	color: #D90000;
+}
