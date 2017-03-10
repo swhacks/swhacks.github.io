@@ -2,9 +2,10 @@
 #sponsors {
     background-color: white;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.sponsors-flex {
+#sponsors-flex {
   padding: 0;
   margin-left: 10%;
   margin-right: 10%;
@@ -16,7 +17,7 @@
   display: -webkit-flex;
   display: flex;
   
-  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -64,8 +65,8 @@
 }
 
 .sponsors-topaz {
-    max-height: 145px;
-    max-width: 210px;
+    max-height: 135px;
+    max-width: 200px;
     padding-left: 19.44px;
     padding-right: 19.44px;
     padding-top: 14.58px;
