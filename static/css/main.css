@@ -108,6 +108,12 @@ a, a:hover, a:active, a:visited, a:focus {
     background-image: url("../img/instagram_hex_yellow.png");
 }
 
+.button_big {
+    width: 74px;
+    height: 64px;
+    margin: 8px;
+}
+
 h1, h2 {
     overflow: hidden;
 }

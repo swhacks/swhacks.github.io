@@ -1,20 +1,16 @@
 #sponsor_prizes {
 	padding: 32px;
+	display: none;
 }
 
 #sponsor_prizes #prizes-flex {
-	display: flex;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: stretch;
+	margin-top: 16px;
+	text-align: center;
+	word-spacing: 0px;
 }
 
-#sponsor_prizes .prize {
+#prizes-flex > .prize {
+	font-family: "raleway-regular", Arial, Tahoma;
 	display: inline-block;
 	min-width: 236px;
 	width: 30vw;
@@ -23,4 +19,6 @@
 	color: black;
 	overflow: hidden;
 	text-align: center;
+	min-height: 150px;
+	padding: 8px;
 }
