@@ -1,46 +1,60 @@
-#header {
-	background-image: url("../img/SWHacks_landing_bg.png");
-	background-repeat: repeat;
-	background-size: contain;
-	/*max-height: 91vh;*/
-	min-height: 20vh;
+.header-container {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../img/header_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
-#hdr-top {
-	width: 100%;
+.header-title {
+    background-image: url("../img/website_header.png");
+    width: 100%;
+    height: 59vw;
+    max-height: 75vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 32px solid transparent;
 }
 
-#hdr-top #hdr-top-left {
-	float: left;
-	margin-top: 16px;
-	margin-left: 16px;
+.register-button {
+    display: inline-block;
+    background-image: url("../img/registerButton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 50vw;
+    height: 7vw;
+    max-width: 512px;
+    max-height: 72px;
+/*    width: 236px;
+    height: 33px;
+*/}
 
-	font-size: 18pt;
-	font-family: "raleway-light", Verdana, Tahoma;
+.header-container .buttons {
+    text-align: center;
 }
 
-#hdr-top #hdr-top-right {
-	float: right;
-	word-spacing: 4px;
-	margin-top: 16px;
-	margin-right: 16px;
+.register-button:hover {
+    background-image: url("../img/registerButtonHover.png");
 }
 
-#hdr-pic-pos {
-	padding-left: 10vw;
-	padding-right: 10vw;
-}
+.volunteer-button {
+    display: inline-block;
+    background-image: url("../img/volunteerButton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 50vw;
+    height: 7vw;
+    max-width: 512px;
+    max-height: 72px;
+/*    width: 236px;
+    height: 33px;
+*/}
 
-@media (max-width: 540px) {
-	#hdr-pic-pos {
-		padding-top: 50px;
-	}
-}
-
-#header-img {
-	padding: 5vh 3vw 5vh 3vw;
-}
-
-#header-img-mobile {
-	padding: 2vh 4vw 3vh 4vw;
+.volunteer-button:hover {
+    background-image: url("../img/volunteerButtonHover.png");
 }

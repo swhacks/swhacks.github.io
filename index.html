@@ -29,31 +29,16 @@
 </head>
 
 <body>
-    <div id="header" class="tl-block">
-        <div id="hdr-top">
-            <div id="hdr-top-left">
-                <a class="facebook-btn" href="https://www.facebook.com/swhacksofficial" target="_blank"></a>
-                <a class="twitter-btn" href="https://twitter.com/SWHacksOfficial" target="_blank"></a>
-                <a class="instagram-btn" href="https://instagram.com/swhacksofficial" target="_blank"></a>
-                #SWHacks17
-            </div>
+    <div class="tl-block header-container">
+        <div class="header-title">
         </div>
-        <div class="visible-xs visible-sm">
-            <img src="static/img/mobile_website_header.png" class="img-responsive" id="header-img-mobile" alt="" />
-        </div>
-        <div class="hidden-xs hidden-sm">
-            <img src="static/img/website_header.png" class="img-responsive" id="header-img" alt="" />
-        </div>
-        <a class="register-link" id="hdr-reg-btn"></a>
-    </div>
-    <div id="section-links-helper"></div>
-    <div id="section-links" class="section-links tl-block">
-        <div class="link-container">
-            <a class="link-button link-button-register" href="https://swhacks.typeform.com/to/tPmlbe" target="_blank"> Register </a>
-            <a class="link link-button" href="https://swhacks.typeform.com/to/Wmx8qz" target="_blank"> Volunteer </a>
-            <a class="link-button" href="javascript:globals.scrollTo('#about')"> About </a>
-            <a class="link-button" href="javascript:globals.scrollTo('#schedule')"> Schedule </a>
-            <a class="link-button" href="javascript:globals.scrollTo('#faq')"> FAQ </a>
+        <div class="buttons">
+            <a href="https://swhacks.typeform.com/to/tPmlbe" target="blank" class="register-button"></a>
+            <a href="https://swhacks.typeform.com/to/Wmx8qz" target="blank" class="volunteer-button"></a>
+            <br />
+            <a class="facebook-btn" href="https://www.facebook.com/swhacksofficial" target="_blank"></a>
+            <a class="twitter-btn" href="https://twitter.com/SWHacksOfficial"></a>
+            <a class="instagram-btn" href="https://instagram.com/swhacksofficial" target="_blank"></a>
         </div>
     </div>
     <div id="about" class="tl-block">
@@ -130,6 +115,75 @@
             <tr>
                 <td>12:30pm</td>
                 <td>Closing Ceremony</td>
+            </tr>
+        </table>
+        <h1>Event Schedule</h1>
+        <table class="schedule-tbl">
+            <tr>
+                <th colspan="2">Friday, March 10</th>
+            </tr>
+            <tr>
+                <td>8:00pm to 9:00pm</td>
+                <td>Cochise: Team Building Workshop</td>
+            </tr>
+            <tr>
+                <td>9:30pm to 10:30pm</td>
+                <td>Pima: Intro to iOS</td>
+            </tr>
+            <tr>
+                <th colspan="2">Saturday, March 11</th>
+            </tr>
+            <tr>
+                <td>10:00am to 11:00am</td>
+                <td>Pima: Recruiting.Ai</td>
+            </tr>
+            <tr>
+                <td>1:00pm to 2:00pm</td>
+                <td>Pima: WiCS</td>
+            </tr>
+            <tr>
+                <td>2:00pm to 3:00pm</td>
+                <td>Pima: GDC</td>
+            </tr>
+            <tr>
+                <td>3:00pm to 4:00pm</td>
+                <td>Pima: Allstate</td>
+            </tr>
+            <tr>
+                <td>3:00pm to 8:00pm</td>
+                <td>Cochise: Smash Bros</td>
+            </tr>
+            <tr>
+                <td>4:00pm to 5:00pm</td>
+                <td>Pima: Allstate - Alex's Talk</td>
+            </tr>
+            <tr>
+                <td>5:00pm to 6:00pm</td>
+                <td>Pima: Allstate - Brandon's Talk</td>
+            </tr>
+            <tr>
+                <td>7:00pm to 8:00pm</td>
+                <td>Pima: Allstate - David's Talk</td>
+            </tr>
+            <tr>
+                <td>8:00pm to 9:00pm</td>
+                <td>Silent Disco Set-up</td>
+            </tr>
+            <tr>
+                <td>9:00pm to 12:00am</td>
+                <td>Cochise: Silent Disco</td>
+            </tr>
+            <tr>
+                <td>10:00pm to 11:00pm</td>
+                <td>Pima: Intern Supply</td>
+            </tr>
+            <tr>
+                <td>12:00am to 1:00am</td>
+                <td>Cochise: Lip Sync Battles</td>
+            </tr>
+            <tr>
+                <td>12:00am to 1:00am</td>
+                <td>Pima: MLH iLight</td>
             </tr>
         </table>
     </div>
@@ -330,7 +384,7 @@
         </div>
         <p id="copyright">&copy; The Software Developers Association 2016-2017</p>
     </div>
-    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0px;width:10%;z-index:10000"
         href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white"
         target="_blank">
         <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season"

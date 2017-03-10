@@ -20,7 +20,7 @@ var globals = globals || {};
 
     globals.scrollTo = globals.scrollTo || function scrollTo(elem) {
         $('html, body').animate({
-            scrollTop: max(0, $(elem).offset().top) + 'px'
+            scrollTop: max(0, $(elem).offset().top - 50) + 'px'
         }, 1000, 'swing');
     }
 

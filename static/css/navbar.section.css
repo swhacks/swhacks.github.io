@@ -1,88 +1,77 @@
-.section-links {
-	width: 100%;
-	background-color: #313849;
-	min-height: 60px;
-}
-
-#section-links-helper {
-	height: 0px;
-	min-height: 0px;
-}
-
-@media (max-width: 991px) {
-	.link-container {
-		margin: 0 auto;
-		max-width: auto;
-		font-size: 0;
-		text-align: center;
-	}
+/*@media (max-width: 991px) {
+    .link-container {
+        margin: 0 auto;
+        max-width: auto;
+        font-size: 0;
+        text-align: center;
+    }
 }
 
 @media (min-width: 992px) {
-	.link-container {
-		margin: 0 auto;
-		width: 60%;
-		font-size: 0;
-		text-align: center;
-	}
+    .link-container {
+        margin: 0 auto;
+        width: 60%;
+        font-size: 0;
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px) {
-	.link-button {
-		width: 20%;
-		font-size: 4.0vw;
+    .link-button {
+        width: 20%;
+        font-size: 4.0vw;
 
-		display: inline-block;
-		height: 64px;
-		line-height: 64px;
-		font-family: "raleway-medium", Arial, Tahoma;
-		text-align: center;
-	}
+        display: inline-block;
+        height: 64px;
+        line-height: 64px;
+        font-family: "raleway-medium", Arial, Tahoma;
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
-	.link-button {
-		width: 20%;
-		font-size: 2.75vw;
+    .link-button {
+        width: 20%;
+        font-size: 2.75vw;
 
-		display: inline-block;
-		height: 64px;
-		line-height: 64px;
-		font-family: "raleway-medium", Arial, Tahoma;
-		text-align: center;
-	}
+        display: inline-block;
+        height: 64px;
+        line-height: 64px;
+        font-family: "raleway-medium", Arial, Tahoma;
+        text-align: center;
+    }
 }
 
 @media (min-width: 992px) {
-	.link-button {
-		width: 100px;
-		font-size: 15pt;
-		display: inline-block;
-		height: 64px;
-		line-height: 64px;
-		font-family: "raleway-medium", Arial, Tahoma;
-		text-align: center;
-	}
-}
+    .link-button {
+        width: 100px;
+        font-size: 15pt;
+        display: inline-block;
+        height: 64px;
+        line-height: 64px;
+        font-family: "raleway-medium", Arial, Tahoma;
+        text-align: center;
+    }
+}*/
 
 a.link-button-register {
-	color: #f2480c;
-	background-color: #ffd613;
+    color: #f2480c;
+    background-color: #ffd613;
 }
 
 .link-button:hover {
-	color: white;
-	background-color: #f1580e;
+    color: white;
+    background-color: #f1580e;
 }
 
 .link-button-register:hover {
-	color: white;
-	background-color: #f1580e;
+    color: white;
+    background-color: #f1580e;
 }
 
 .link-navbar-fixed {
-	position: fixed;
-	top: 0px;
-	border-style: solid;
-	border-width: 0px 0px 1px 0px;
+    position: fixed;
+    top: 0px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
 }
