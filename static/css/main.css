@@ -108,6 +108,6 @@ a, a:hover, a:active, a:visited, a:focus {
     background-image: url("../img/instagram_hex_yellow.png");
 }
 
-h1 {
+h1, h2 {
     overflow: hidden;
 }
