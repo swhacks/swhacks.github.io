@@ -1,0 +1,26 @@
+#sponsor_prizes {
+	padding: 32px;
+}
+
+#sponsor_prizes #prizes-flex {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+#sponsor_prizes .prize {
+	display: inline-block;
+	min-width: 236px;
+	width: 30vw;
+	max-width: 500px;
+	background-color: white;
+	color: black;
+	overflow: hidden;
+	text-align: center;
+}
