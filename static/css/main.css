@@ -27,6 +27,7 @@
 /* ===Set up=== */
 * {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -105,4 +106,8 @@ a, a:hover, a:active, a:visited, a:focus {
 .instagram-btn:hover,
 .instagram-btn:active {
     background-image: url("../img/instagram_hex_yellow.png");
+}
+
+h1 {
+    overflow: hidden;
 }
