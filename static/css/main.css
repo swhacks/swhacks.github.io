@@ -108,10 +108,74 @@ a, a:hover, a:active, a:visited, a:focus {
     background-image: url("../img/instagram_hex_yellow.png");
 }
 
-.button_big {
+.snapchat-btn {
+    background-image: url("../img/SnapchatHexWhite.png");
+    background-size: cover;
+    width: 37px;
+    height: 32px;
+    display: inline-block;
+}
+
+.snapchat-btn:hover,
+.snapchat-btn:active {
+    background-image: url("../img/SnapchatHexYellow.png");
+}
+
+.facebook-btn-top {
+    background-image: url("../img/FacebookHexDropShadowWhite.png");
+    background-size: cover;
     width: 74px;
     height: 64px;
-    margin: 8px;
+    display: inline-block;
+    margin: 4px;
+    margin-top: 16px;
+}
+.facebook-btn-top:hover,
+.facebook-btn-top:active {
+    background-image: url("../img/FacebookHexDropShadowYellow.png");
+}
+
+.twitter-btn-top {
+    background-image: url("../img/TwitterHexDropShadowWhite.png");
+    background-size: cover;
+    width: 74px;
+    height: 64px;
+    display: inline-block;
+    margin: 4px;
+    margin-top: 16px;
+}
+.twitter-btn-top:hover,
+.twitter-btn-top:active {
+    background-image: url("../img/TwitterHexDropShadowYellow.png");
+}
+
+.instagram-btn-top {
+    background-image: url("../img/InstagramDropShadowWhite.png");
+    background-size: cover;
+    width: 74px;
+    height: 64px;
+    display: inline-block;
+    margin: 4px;
+    margin-top: 16px;
+}
+.instagram-btn-top:hover,
+.instagram-btn-top:active {
+    background-image: url("../img/InstagramHexWithDropShadowYellow.png");
+}
+
+.snapchat-btn-top {
+    background-image: url("../img/SnapchatWhiteDropShadow.png");
+    background-size: cover;
+    width: 74px;
+    height: 64px;
+    display: inline-block;
+    margin: 4px;
+    margin-top: 16px;
+}
+
+.snapchat-btn-top:hover,
+.snapchat-btn-top:active {
+    background-image: url("../img/SnapchatHexYellowDropShadow.png");
 }
 
 h1, h2 {
