@@ -33,4 +33,10 @@ var globals = globals || {};
             $(".email-btn").attr("href", "mailto" + ":tea" + "m@swhacks.io");
         }, 1000);
     });
+
+    var refresh = function refresh() {
+        $("#notifications .notif-tgt").load("https://speednotif.devyashis.me");
+    };
+
+    setInterval(refresh, 1000);
 })();

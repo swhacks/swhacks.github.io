@@ -1,0 +1,32 @@
+#notifications {
+	background-color: white;
+	border-bottom: 1px solid black;
+	padding: 32px;
+}
+
+#notifications * {
+	color: black; 
+}
+
+#notifications .notif-tgt {
+	width: 100%;
+	background-color: #C6C6C6;
+	min-height: 10px;
+	padding: 10px;
+}
+
+#noficiations .notif-tgt {
+	list-style-type: circle;
+}
+
+#notifications .notif-tgt *:nth-child(even) {
+	color: black;
+}
+
+#notifications .notif-tgt *:nth-child(odd) {
+	color: blue;
+}
+
+#notifications a {
+	color: red;
+}
