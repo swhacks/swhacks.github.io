@@ -1,9 +1,11 @@
 .winners {
+	padding: 32px;
 	padding-top: 16px;
 	background-color: white;
 }
 
 .winners #winners-flex {
+	margin-top: 16px;
 	text-align: center;
 	word-spacing: 0px;
 }
@@ -19,6 +21,13 @@
 	min-width: 236px;
 	max-width: 512px;
 	width: 30vw;
+	min-height: 170px;
+}
+
+.winners #winners-flex > *:hover,
+.winners #winners-flex > *:active {
+	background-color: black;
+	color: white;
 }
 
 .winners h2,
