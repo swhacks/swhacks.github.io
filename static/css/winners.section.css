@@ -25,5 +25,6 @@
 .winners .description,
 .winners .prize {
 	font-family: "raleway-regular", Arial, Tahoma;
+	font-weight: bold;
 	color: white;
 }
