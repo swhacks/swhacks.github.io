@@ -59,18 +59,18 @@ var globals = globals || {};
 
         globals.prev = globals.prev || null;
     
-        var refresh = function refresh() {
-            jQuery.get("https://speednotif.devyashis.me", function down(success) {
-                $("#notifications .notif-tgt").html(success);
-                str = success;
-                if(globals.prev && str != globals.prev) {
-                    globals.notify();
-                }
-                globals.prev = str;
-            });
-//            $("#notifications .notif-tgt").load("https://speednotif.devyashis.me");
-        };
-        setInterval(refresh, 1000);
+//         var refresh = function refresh() {
+//             jQuery.get("https://speednotif.devyashis.me", function down(success) {
+//                 $("#notifications .notif-tgt").html(success);
+//                 str = success;
+//                 if(globals.prev && str != globals.prev) {
+//                     globals.notify();
+//                 }
+//                 globals.prev = str;
+//             });
+// //            $("#notifications .notif-tgt").load("https://speednotif.devyashis.me");
+//         };
+// //        setInterval(refresh, 1000);
     });
 
     globals.hack = true;
