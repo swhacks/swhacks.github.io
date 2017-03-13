@@ -1,0 +1,14 @@
+.thank-you {
+	padding: 24px;
+	text-align: center;
+}
+
+.thank-you p {
+	font-family: "raleway-regular", Arial, Tahoma;
+}
+
+.thank-you #thank-you-container {
+	display: inline-block;
+	max-width: 768px;
+	text-align: justify;
+}

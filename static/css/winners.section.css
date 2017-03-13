@@ -1,0 +1,29 @@
+.winners {
+	padding-top: 16px;
+	background-color: white;
+}
+
+.winners #winners-flex {
+	text-align: center;
+	word-spacing: 0px;
+}
+
+.winners * {
+	color: black;
+}
+
+.winners #winners-flex > * {
+	display: inline-block;
+	background-color: #f2430c;
+	padding: 16px;	
+	min-width: 236px;
+	max-width: 512px;
+	width: 30vw;
+}
+
+.winners h2,
+.winners .description,
+.winners .prize {
+	font-family: "raleway-regular", Arial, Tahoma;
+	color: white;
+}

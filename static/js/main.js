@@ -74,4 +74,5 @@ var globals = globals || {};
     });
 
     globals.hack = true;
+    globals.hack2 = true;
 })();
