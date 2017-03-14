@@ -1,0 +1,39 @@
+.winners {
+	padding: 32px;
+	padding-top: 16px;
+	background-color: white;
+}
+
+.winners #winners-flex {
+	margin-top: 16px;
+	text-align: center;
+	word-spacing: 0px;
+}
+
+.winners * {
+	color: black;
+}
+
+.winners #winners-flex > * {
+	display: inline-block;
+	background-color: #f2430c;
+	padding: 16px;	
+	min-width: 236px;
+	max-width: 512px;
+	width: 30vw;
+	min-height: 170px;
+}
+
+.winners #winners-flex > *:hover,
+.winners #winners-flex > *:active {
+	background-color: black;
+	color: white;
+}
+
+.winners h2,
+.winners .description,
+.winners .prize {
+	font-family: "raleway-regular", Arial, Tahoma;
+	font-weight: bold;
+	color: white;
+}
